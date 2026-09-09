@@ -1,0 +1,224 @@
+- type: guideEntry
+  id: RonstationRuleset
+  name: guide-entry-rules
+  ruleEntry: true
+  text: "/ServerInfo/Guidebook/_Ronstation/ServerRules/Rules.xml"
+  priority: 0
+  children:
+    - RonstationCoreRules
+    - RonstationRPRules
+    - RonstationSpecificRules
+
+- type: guideEntry
+  id: RonstationCoreRules
+  name: guide-entry-rs-core
+  ruleEntry: true
+  text: "/ServerInfo/Guidebook/_Ronstation/ServerRules/CoreRules/CoreRules.xml"
+  priority: 1
+  children:
+    - RuleRSC0
+    - RuleRSC1
+    - RuleRSC2
+    - RuleRSC3
+    - RuleRSC4
+    - RuleRSC5
+    - RuleRSC6
+    - RuleRSC7
+    - RuleRSC8
+    - RuleRSC9
+
+- type: guideEntry
+  id: RonstationRPRules
+  name: guide-entry-rs-rp
+  ruleEntry: true
+  text: "/ServerInfo/Guidebook/_Ronstation/ServerRules/RoleplayRules/RoleplayRules.xml"
+  priority: 2
+  children:
+    - RuleRSR1
+    - RuleRSR2
+    - RuleRSR3
+    - RuleRSR4
+    - RuleRSR5
+    - RuleRSR6
+    - RuleRSR7
+    - RuleRSR8
+
+- type: guideEntry
+  id: RonstationSpecificRules
+  name: guide-entry-rs-specific
+  ruleEntry: true
+  text: "/ServerInfo/Guidebook/_Ronstation/ServerRules/SpecificRules/SpecificRules.xml"
+  priority: 3
+  children:
+    - RuleRSS1
+    - RuleRSS2
+    - RuleRSS3
+    - RuleRSS4
+    - RuleRSS5
+
+# Core rules
+- type: guideEntry
+  id: RuleRSC0
+  name: guide-entry-rs-core-0
+  ruleEntry: true
+  priority: 1
+  text: "/ServerInfo/Guidebook/_Ronstation/ServerRules/CoreRules/RuleRSC0Admins.xml"
+
+- type: guideEntry
+  id: RuleRSC1
+  name: guide-entry-rs-core-1
+  ruleEntry: true
+  priority: 2
+  text: "/ServerInfo/Guidebook/_Ronstation/ServerRules/CoreRules/RuleRSC1Negativity.xml"
+
+- type: guideEntry
+  id: RuleRSC2
+  name: guide-entry-rs-core-2
+  ruleEntry: true
+  priority: 3
+  text: "/ServerInfo/Guidebook/_Ronstation/ServerRules/CoreRules/RuleRSC2Bigotry.xml"
+
+- type: guideEntry
+  id: RuleRSC3
+  name: guide-entry-rs-core-3
+  ruleEntry: true
+  priority: 4
+  text: "/ServerInfo/Guidebook/_Ronstation/ServerRules/CoreRules/RuleRSC3NoERP.xml"
+
+- type: guideEntry
+  id: RuleRSC4
+  name: guide-entry-rs-core-4
+  ruleEntry: true
+  priority: 5
+  text: "/ServerInfo/Guidebook/_Ronstation/ServerRules/CoreRules/RuleRSC4Age.xml"
+
+- type: guideEntry
+  id: RuleRSC5
+  name: guide-entry-rs-core-5
+  ruleEntry: true
+  priority: 6
+  text: "/ServerInfo/Guidebook/_Ronstation/ServerRules/CoreRules/RuleRSC5BanEvasion.xml"
+
+- type: guideEntry
+  id: RuleRSC6
+  name: guide-entry-rs-core-6
+  ruleEntry: true
+  priority: 7
+  text: "/ServerInfo/Guidebook/_Ronstation/ServerRules/CoreRules/RuleRSC6Cheats.xml"
+
+- type: guideEntry
+  id: RuleRSC7
+  name: guide-entry-rs-core-7
+  ruleEntry: true
+  priority: 8
+  text: "/ServerInfo/Guidebook/_Ronstation/ServerRules/CoreRules/RuleRSC7AHelp.xml"
+
+- type: guideEntry
+  id: RuleRSC8
+  name: guide-entry-rs-core-8
+  ruleEntry: true
+  priority: 9
+  text: "/ServerInfo/Guidebook/_Ronstation/ServerRules/CoreRules/RuleRSC8English.xml"
+
+- type: guideEntry
+  id: RuleRSC9
+  name: guide-entry-rs-core-9
+  ruleEntry: true
+  priority: 10
+  text: "/ServerInfo/Guidebook/_Ronstation/ServerRules/CoreRules/RuleRSC9EORG.xml"
+
+# Roleplay Rules
+
+- type: guideEntry
+  id: RuleRSR1
+  name: guide-entry-rs-rp-1
+  ruleEntry: true
+  priority: 1
+  text: "/ServerInfo/Guidebook/_Ronstation/ServerRules/RoleplayRules/RuleRSR1SelfAntag.xml"
+
+- type: guideEntry
+  id: RuleRSR2
+  name: guide-entry-rs-rp-2
+  ruleEntry: true
+  priority: 2
+  text: "/ServerInfo/Guidebook/_Ronstation/ServerRules/RoleplayRules/RuleRSR2Escalation.xml"
+
+- type: guideEntry
+  id: RuleRSR3
+  name: guide-entry-rs-rp-3
+  ruleEntry: true
+  priority: 3
+  text: "/ServerInfo/Guidebook/_Ronstation/ServerRules/RoleplayRules/RuleRSR3Players.xml"
+
+- type: guideEntry
+  id: RuleRSR4
+  name: guide-entry-rs-rp-4
+  ruleEntry: true
+  priority: 4
+  text: "/ServerInfo/Guidebook/_Ronstation/ServerRules/RoleplayRules/RuleRSR4Roleplay.xml"
+
+- type: guideEntry
+  id: RuleRSR5
+  name: guide-entry-rs-rp-5
+  ruleEntry: true
+  priority: 5
+  text: "/ServerInfo/Guidebook/_Ronstation/ServerRules/RoleplayRules/RuleRSR5Metacom.xml"
+
+- type: guideEntry
+  id: RuleRSR6
+  name: guide-entry-rs-rp-6
+  ruleEntry: true
+  priority: 6
+  text: "/ServerInfo/Guidebook/_Ronstation/ServerRules/RoleplayRules/RuleRSR6Metagaming.xml"
+
+- type: guideEntry
+  id: RuleRSR7
+  name: guide-entry-rs-rp-7
+  ruleEntry: true
+  priority: 7
+  text: "/ServerInfo/Guidebook/_Ronstation/ServerRules/RoleplayRules/RuleRSR7Metagrudge.xml"
+
+- type: guideEntry
+  id: RuleRSR8
+  name: guide-entry-rs-rp-8
+  ruleEntry: true
+  priority: 8
+  text: "/ServerInfo/Guidebook/_Ronstation/ServerRules/RoleplayRules/RuleRSR8RoleAbandon.xml"
+
+# Specific Rules
+
+- type: guideEntry
+  id: RuleRSS1
+  name: guide-entry-rs-s-1
+  ruleEntry: true
+  priority: 1
+  text: "/ServerInfo/Guidebook/_Ronstation/ServerRules/SpecificRules/RuleRSS1Silicons.xml"
+
+- type: guideEntry
+  id: RuleRSS2
+  name: guide-entry-rs-s-2
+  ruleEntry: true
+  priority: 2
+  text: "/ServerInfo/Guidebook/_Ronstation/ServerRules/SpecificRules/RuleRSS2Familiars.xml"
+
+- type: guideEntry
+  id: RuleRSS3
+  name: guide-entry-rs-s-3
+  ruleEntry: true
+  priority: 3
+  text: "/ServerInfo/Guidebook/_Ronstation/ServerRules/SpecificRules/RuleRSS3SecCommand.xml"
+
+- type: guideEntry
+  id: RuleRSS4
+  name: guide-entry-rs-s-4
+  ruleEntry: true
+  priority: 4
+  text: "/ServerInfo/Guidebook/_Ronstation/ServerRules/SpecificRules/RuleRSS4Antags.xml"
+
+- type: guideEntry
+  id: RuleRSS5
+  name: guide-entry-rs-s-5
+  ruleEntry: true
+  priority: 5
+  text: "/ServerInfo/Guidebook/_Ronstation/ServerRules/SpecificRules/RuleRSS5FreeAgents.xml"
+

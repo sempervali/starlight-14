@@ -59,3 +59,6 @@ rp_notes = true
 [newlife]
 ghost_cooldown = 0
 max_new_lifes = 100
+
+[server]
+rules_file="RonstationRules"

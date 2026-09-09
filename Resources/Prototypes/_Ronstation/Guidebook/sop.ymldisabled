@@ -1,0 +1,32 @@
+- type: guideEntry
+  id: PSSOP
+  name: guide-entry-ps-sop-basic
+  text: "/ServerInfo/Guidebook/PhoenixSOP/General.xml"
+  priority: 1
+  children:
+    - SOPPSDepCommand
+    - SOPPSDepNTPersonnel
+    - SOPPSDepSecurity
+    - SOPPSDepCargo
+
+
+- type: guideEntry
+  id: SOPPSDepCommand
+  name: guide-entry-ps-sop-specific-command
+  text: "/ServerInfo/Guidebook/PhoenixSOP/Specific/SOPPSDepCommand.xml"
+  priority: 1
+- type: guideEntry
+  id: SOPPSDepNTPersonnel
+  name: guide-entry-ps-sop-specific-ntp
+  text: "/ServerInfo/Guidebook/PhoenixSOP/Specific/SOPPSDepNTP.xml"
+  priority: 2
+- type: guideEntry
+  id: SOPPSDepSecurity
+  name: guide-entry-ps-sop-specific-security
+  text: "/ServerInfo/Guidebook/PhoenixSOP/Specific/SOPPSDepSecurity.xml"
+  priority: 3
+- type: guideEntry
+  id: SOPPSDepCargo
+  name: guide-entry-ps-sop-specific-cargo
+  text: "/ServerInfo/Guidebook/PhoenixSOP/Specific/SOPPSDepCargo.xml"
+  priority: 4
