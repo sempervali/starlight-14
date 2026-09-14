@@ -1,20 +1,12 @@
 # Remastered CC Agent admeme; presenting, Corporate Watchdog
 - type: entity
   id: ClothingBackpackSatchelHoldingCentcomWatchdogFilled
-  parent: [ClothingBackpackSatchelHolding, BaseChameleon]
+  parent: [ClothingBackpackSatchelHoldingRSChameleon]
   suffix: Filled, Centcom Agent, Admeme, Chameleon
   components:
   - type: ChameleonClothing
     slot: [back]
     default: ClothingBackpackSatchelLeather
-  - type: UserInterface
-    interfaces:
-      enum.StorageUiKey.Key:
-        type: StorageBoundUserInterface
-      enum.ChameleonUiKey.Key:
-        type: ChameleonBoundUserInterface
-  - type: Tag
-    tags: [] # Since it just reuses a sprite, not whitelisted for chameleon
   - type: StorageFill
     contents:
       - id: SyndicateJawsOfLifeStealth # the Nanotrasen special; reappropriated Syndicate Tech
@@ -44,6 +36,12 @@
       - id: MindShieldImplanter
       - id: DeathRattleImplanterCentcomm
       - id: RadioImplanterCentcomm
+<<<<<<< HEAD
       - id: BluespaceStorageImplanter # This was made admeme only by upstream likey, hence its rename. Mostly just to store blatant CC(and 'repurposed' syndie) contra such as the full ID, and the used implanters
       - id: CentcomIDCard # To pull access from in an emergency.
       - id: CigarGoldCase
+=======
+      - id: BluespaceStorageImplanter # This is now admeme anyways, but the intent is just to store the (conta) implanters without having to take extra steps to dispose of them
+      - id: CentcomIDCard # To pull access from or fully identify yourself in an emergency.
+      - id: CigarGoldCase # To blend in :3
+>>>>>>> d2fe1ac3d23 (fix tech debt, add admemes)

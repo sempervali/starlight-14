@@ -1,0 +1,19 @@
+#I should've made this a seperate prototype in the first place,
+- type: entity
+  id: ClothingBackpackSatchelHoldingRSChameleon
+  parent: [ClothingBackpackSatchelHolding, BaseChameleon]
+  suffix: Admeme, Chameleon, DO NOT MAP
+  components:
+  - type: ChameleonClothing
+    slot: [back]
+    default: ClothingBackpackSatchelHolding
+  - type: UserInterface
+    interfaces:
+      enum.StorageUiKey.Key:
+        type: StorageBoundUserInterface
+      enum.ChameleonUiKey.Key:
+        type: ChameleonBoundUserInterface
+  - type: Tag
+    tags: # Explicitly defined, to prevent duplicate entries in chameleon items.
+    - ScurretWearable # This is already admeme. Letting pets wear it is just for extra silly shenanigans
+    - CorgiWearable

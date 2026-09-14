@@ -1,0 +1,9 @@
+- type: entity
+  parent: [ClothingOuterArmorCentcommChameleon]
+  id: ClothingOuterArmorCentcommCarapaceChameleon
+  name: CC Carapace
+  description: An armored Carapace that provides premium protection, and can mask itself.
+  components:
+  - type: ChameleonClothing
+    slot: [outerClothing]
+    default: ClothingOuterArmorCentcommCarapace

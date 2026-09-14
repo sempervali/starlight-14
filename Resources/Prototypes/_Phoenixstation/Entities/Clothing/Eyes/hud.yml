@@ -37,7 +37,9 @@
     - type: Tag
       tags:
         - HudMedical
-        - WhitelistChameleon
+        - WhitelistChameleon # Not typical, but allowing these be chameleon'd would be part of the larp with allowing impersonation.
+        - ScurretWearable # This is already admeme. Letting pets wear it is just for extra silly shenanigans
+        - CorgiWearable
     - type: ChameleonClothing
       slot:
         - eyes
