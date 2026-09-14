@@ -21,6 +21,7 @@
     - id: MagazineMagnumAP
     - id: ClothingEyesGlassesCentComm
     - id: ClothingEyesHudCentComm
+    - id: CentCommCommunicationTablet
 # Filled modsuit for ERT leader admeme, 12 gauge speedloaders
 - type: entity
   parent: ClothingBackpackERTLeader
@@ -47,6 +48,7 @@
       - id: BodyBagCCFolded
       - id: BodyBagCCFolded
       - id: BodyBagCCFolded
+      - id: CentCommCommunicationTablet
 # Filled modsuit for ERT leader admeme, XL8/Lecter mags
 - type: entity
   parent: ClothingBackpackERTLeader
@@ -73,12 +75,13 @@
       - id: BodyBagCCFolded
       - id: BodyBagCCFolded
       - id: BodyBagCCFolded
+      - id: CentCommCommunicationTablet
 # Written by Semper based off of Atakku's original code, further modified from contribution to Ronstation
 # This explicitly now targets a role as CC Security division
 - type: entity
   id: ClothingBackpackHoldingCentcomOfficerFilled
-  parent: [ ClothingBackpackHoldingRSChameleon, BaseCentcommContraband ]
-  suffix: Filled, Centcom Officer, Admeme, Chameleon
+  parent: [ClothingBackpackHoldingRSChameleon, BaseCentcommContraband]
+  suffix: Filled, Centcom Officer, Admeme
   components:
   - type: StorageFill
     contents:
@@ -86,7 +89,6 @@
       - id: RubberStampCentcom
       - id: RubberStampIWBYA
       - id: BoxStampsCCAdministrative
-      - id: CommandTrackerImplanter
       - id: ToolDebug
       - id: WelderExperimental
       - id: RCDExperimental
@@ -96,6 +98,7 @@
       - id: BoxSurvivalNonBreatherExtended
       - id: DoubleEmergencyNitrogenTankFilled
       - id: DoubleEmergencyOxygenTankFilled
+      - id: AgentIDCard
       - id: BoxFolderCentComClipboardThreePapers
       - id: WeaponDisablerSMG
       - id: BoxHandcuff
@@ -116,4 +119,5 @@
       - id: WeaponLightMachineGunM492CC
       - id: LightRifleHeavyMagazineIncendiary
       - id: LightRifleHeavyMagazineIncendiary
-      - id: ClothingOuterHardsuitCCSDH
+      - id: ClothingOuterHardsuitCCSDExperimental
+      - id: CentCommCommunicationTablet
