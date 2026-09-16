@@ -1,0 +1,29 @@
+#CC Sec Div Hardsuit
+- type: entity
+  parent: ClothingOuterHardsuitGreenshield # The experimental hardsuit was removed for a reason so I wanted to change this to something that is more reasonable for normal station gameplay
+  categories: [ DoNotMap ]
+  suffix: Admeme, DO NOT MAP
+  id: ClothingOuterHardsuitCCSDH
+  name: CentComm Sec Division Head Hardsuit
+  description: A high-tech hardsuit with an ID-Lock system, custom tailored by the Head of Central Command's Security division herself.
+  components:
+    - type: Clothing
+      equipDelay: 3
+      unequipDelay: 3
+    - type: ToggleableClothing
+      clothingPrototype: ClothingHeadHelmetHardsuitCCSDH
+    - type: IdClothingBlocker
+      allowedAccesses:
+        - CentralCommand
+    - type: Item
+      size: Huge
+      shape:
+      - 0,0,3,3
+    - type: ZombificationResistance
+      zombificationResistanceCoefficient: 0.1
+    - type: FootstepModifier # Just makes a different footstep sound. I think its cooler.
+      footstepSoundCollection:
+        collection: FootstepHeavy
+        params:
+          volume: -6
+          variation: 0.09

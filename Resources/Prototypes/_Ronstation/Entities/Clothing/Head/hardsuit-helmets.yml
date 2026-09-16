@@ -1,0 +1,17 @@
+# In case this actually gets a PROPER distinguishment like a custom sprite, or if we need to tweak values for it
+- type: entity
+  parent: [ClothingHeadHelmetHardsuitGreenshield, BaseCentcommContraband]
+  suffix: Admeme, DO NOT MAP
+  categories: [ DoNotMap ]
+  id: ClothingHeadHelmetHardsuitCCSDH
+  name: CentComm Sec Division Head Hardsuit Helmet
+  components:
+    - type: ShowJobIcons
+    - type: ShowMindShieldIcons
+    - type: ShowHealthBars
+      damageContainers:
+      - Biological
+      - Hybrid # Neocytes
+    - type: ShowHealthIcons
+    - type: FlashImmunity
+      blocksSpecialVision: false
