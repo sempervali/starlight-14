@@ -40,7 +40,7 @@
   id: CentcomOfficerGear
   equipment:
     jumpsuit: ClothingUniformJumpskirtCentcommSecurityFormalWear
-    back: ClothingBackpackSatchelHoldingCentcomOfficerFilled
+    back: ClothingBackpackHoldingCentcomOfficerFilled
     shoes: ClothingShoesBootsJackFilled
     head: ClothingHeadHatCentcomcap
     mask: ClothingMaskGasCentcom
