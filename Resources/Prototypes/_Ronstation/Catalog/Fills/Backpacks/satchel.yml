@@ -3,8 +3,8 @@
 # General CC character, rather than head of a CC department
 - type: entity
   id: ClothingBackpackSatchelHoldingCentcomFormalFilled
-  parent: [ ClothingBackpackSatchelHolding, BaseCentcommContraband ]
-  suffix: Filled, Centcom Formal, Admeme
+  parent: [ ClothingBackpackSatchelHoldingRSChameleon, BaseCentcommContraband ]
+  suffix: Filled, Centcom Officer, Admeme, Chameleon
   components:
   - type: Tag
     tags: [] # Since it just reuses a sprite, not whitelisted for chameleon.

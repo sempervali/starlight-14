@@ -1,5 +1,6 @@
+# The catch-all card that can be given to CCO, Division members, and other such loadouts so that there isn't need to make hundreds of new roles just to make the divisions 'work'.
 - type: entity
-  parent: [ IDCardStandard, BaseCentcommContraband ]
+  parent: [ AgentIDCard, BaseCentcommContraband ]
   id: CentcomIDCardDivision
   name: CentComm Division ID card
   suffix: Centcomm, Divisions
@@ -9,14 +10,14 @@
     sprite: _Starlight/Objects/Misc/id_cards.rsi
     layers:
     - state: centcom
-    - sprite: Objects/Misc/id_cards.rsi
+    - sprite: &id-rsi Objects/Misc/id_cards.rsi
       state: stripe_top
       color: "#999999"
     - sprite: Objects/Misc/id_cards.rsi
       state: stripe_bottom
       color: "#6b6b6b"
-    - sprite: _Starlight/Interface/Misc/job_icons.rsi
-      offset:  -0.09375, 0.0625 #3 pixels left, 2 pixels up
+    - sprite: &starlight-icon-rsi _Starlight/Interface/Misc/job_icons.rsi
+      offset: &icon-offset -0.09375, 0.0625 #3 pixels left, 2 pixels up
       state: CentComm
   - type: Clothing
     sprite: Objects/Misc/id_cards.rsi
@@ -25,20 +26,498 @@
     heldPrefix: green
   - type: PresetIdCard
     job: CentralCommandOperator
-  - type: Tag #  Ignore Chameleon tags
-    tags:
-    - DoorBumpOpener
-  - type: AgentIDCard
-  - type: UIRequiresLock
-  - type: ActivatableUI
-    key: enum.AgentIDCardUiKey.Key
-    inHandsOnly: true
-  - type: UserInterface
-    interfaces:
-      enum.AgentIDCardUiKey.Key:
-        type: AgentIDCardBoundUserInterface
-      enum.ChameleonUiKey.Key:
-        type: ChameleonBoundUserInterface
-
+  - type: ChameleonClothing
+    slot: [idcard]
+    default: CentcomIDCard
+    requireTag: WhitelistChameleonIdCard
   - type: NanoChatCard
+    listNumber: false
+
+# CentCom Division Head cards, based off of the ERT Leader's ID card. Defined so that they can be chameleoned by the catchall card (or Agent IDs! Impersonation larp for MRP. Good luck faking heads though.)
+- type: entity
+  parent: IDCardStandard
+  id: CCDAdminHeadIDCard
+  name: CentComm Admin. Division Head ID
+  description: An ID card for the prestigous Head of CC's Administration division.
+  components:
+  - type: Sprite
+    sprite: _Starlight/Objects/Misc/id_cards.rsi
+    layers:
+    - state: centcomgold
+    - sprite: *id-rsi
+      state: stripe_top
+      color: "#0c7d1d" #Starlight
+    - sprite: *id-rsi
+      state: stripe_bottom
+      color: "#0a5715" #Starlight
+    - sprite: *starlight-icon-rsi
+      offset: *icon-offset
+      state: ERTLeader
+  - type: Item
+    sprite: Objects/Misc/id_cards.rsi
+    heldPrefix: gold
+  - type: PresetIdCard
+    job: CentralCommandOperator
+  - type: NanoChatCard # CD
+    listNumber: false
+
+- type: entity
+  parent: IDCardStandard
+  id: CCDSecHeadIDCard
+  name: CentComm Sec. Division Head ID
+  description: An ID card for the stalwart Head of CC's Security division.
+  components:
+  - type: Sprite
+    sprite: _Starlight/Objects/Misc/id_cards.rsi
+    layers:
+    - state: centcomgold
+    - sprite: *id-rsi
+      state: stripe_top
+      color: "#0c7d1d" #Starlight
+    - sprite: *id-rsi
+      state: stripe_bottom
+      color: "#0a5715" #Starlight
+    - sprite: *starlight-icon-rsi
+      offset: *icon-offset
+      state: ERTSecurity
+  - type: Item
+    sprite: Objects/Misc/id_cards.rsi
+    heldPrefix: gold
+  - type: PresetIdCard
+    job: CentralCommandOperator
+  - type: NanoChatCard # CD
+    listNumber: false
+
+- type: entity
+  parent: IDCardStandard
+  id: CCDMedHeadIDCard
+  name: CentComm Med. Division Head ID
+  description: An ID card for the stalwart Head of CC's Security division.
+  components:
+  - type: Sprite
+    sprite: _Starlight/Objects/Misc/id_cards.rsi
+    layers:
+    - state: centcomgold
+    - sprite: *id-rsi
+      state: stripe_top
+      color: "#0c7d1d" #Starlight
+    - sprite: *id-rsi
+      state: stripe_bottom
+      color: "#0a5715" #Starlight
+    - sprite: *starlight-icon-rsi
+      offset: *icon-offset
+      state: ERTMedical
+  - type: Item
+    sprite: Objects/Misc/id_cards.rsi
+    heldPrefix: gold
+  - type: PresetIdCard
+    job: CentralCommandOperator
+  - type: NanoChatCard # CD
+    listNumber: false
+
+- type: entity
+  parent: IDCardStandard
+  id: CCDRnDHeadIDCard
+  description: An ID card for the inquisiting Head of CC's Research division.
+  name: CentComm Research Division Head ID
+  components:
+  - type: Sprite
+    sprite: _Starlight/Objects/Misc/id_cards.rsi
+    layers:
+    - state: centcomgold
+    - sprite: *id-rsi
+      state: stripe_top
+      color: "#0c7d1d" #Starlight
+    - sprite: *id-rsi
+      state: stripe_bottom
+      color: "#0a5715" #Starlight
+    - sprite: *starlight-icon-rsi
+      offset: *icon-offset
+      state: CBURN
+  - type: Item
+    sprite: Objects/Misc/id_cards.rsi
+    heldPrefix: gold
+  - type: PresetIdCard
+    job: CentralCommandOperator
+  - type: NanoChatCard # CD
+    listNumber: false
+
+- type: entity
+  parent: IDCardStandard
+  id: CCDEngiHeadIDCard
+  name: CentComm Engi. Division Head ID
+  description: An ID card for the bright Head of CC's Engineering division.
+  components:
+  - type: Sprite
+    sprite: _Starlight/Objects/Misc/id_cards.rsi
+    layers:
+    - state: centcomgold
+    - sprite: *id-rsi
+      state: stripe_top
+      color: "#0c7d1d" #Starlight
+    - sprite: *id-rsi
+      state: stripe_bottom
+      color: "#0a5715" #Starlight
+    - sprite: *starlight-icon-rsi
+      offset: *icon-offset
+      state: ERTEngineer
+  - type: Item
+    sprite: Objects/Misc/id_cards.rsi
+    heldPrefix: gold
+  - type: PresetIdCard
+    job: CentralCommandOperator
+  - type: NanoChatCard # CD
+    listNumber: false
+
+- type: entity
+  parent: IDCardStandard
+  id: CCDCargoHeadIDCard
+  name: CentComm Cargo Division Head ID
+  description: An ID card for the productive Head of CC's Cargo division.
+  components:
+  - type: Sprite
+    sprite: _Starlight/Objects/Misc/id_cards.rsi
+    layers:
+    - state: centcomgold
+    - sprite: *id-rsi
+      state: stripe_top
+      color: "#0c7d1d" #Starlight
+    - sprite: *id-rsi
+      state: stripe_bottom
+      color: "#0a5715" #Starlight
+    - sprite: *starlight-icon-rsi
+      offset: *icon-offset
+      state: CentComm
+  - type: Item
+    sprite: Objects/Misc/id_cards.rsi
+    heldPrefix: gold
+  - type: PresetIdCard
+    job: CentralCommandOperator
+  - type: NanoChatCard # CD
+    listNumber: false
+
+- type: entity
+  parent: IDCardStandard
+  id: CCDDomesticHeadIDCard
+  name: CentComm Domestic Division Head ID
+  description: An ID card for the caring Head of CC's Domestic division.
+  components:
+  - type: Sprite
+    sprite: _Starlight/Objects/Misc/id_cards.rsi
+    layers:
+    - state: centcomgold
+    - sprite: *id-rsi
+      state: stripe_top
+      color: "#0c7d1d" #Starlight
+    - sprite: *id-rsi
+      state: stripe_bottom
+      color: "#0a5715" #Starlight
+    - sprite: *starlight-icon-rsi
+      offset: *icon-offset
+      state: CCServiceWorker
+  - type: Item
+    sprite: Objects/Misc/id_cards.rsi
+    heldPrefix: gold
+  - type: PresetIdCard
+    job: CentralCommandOperator
+  - type: NanoChatCard # CD
+    listNumber: false
+
+- type: entity
+  parent: IDCardStandard
+  id: CCDSpecOpsHeadIDCard
+  name: CentComm Spec. Ops. Division Head ID
+  description: An ID card for the mystical Head of CC's Special Operations division.
+  components:
+  - type: Sprite
+    sprite: _Starlight/Objects/Misc/id_cards.rsi
+    layers:
+    - state: centcomgold
+    - sprite: *id-rsi
+      state: stripe_top
+      color: "#0c7d1d" #Starlight
+    - sprite: *id-rsi
+      state: stripe_bottom
+      color: "#0a5715" #Starlight
+    - sprite: *starlight-icon-rsi
+      offset: *icon-offset
+      state: CentCommOperator
+  - type: Item
+    sprite: Objects/Misc/id_cards.rsi
+    heldPrefix: gold
+  - type: PresetIdCard
+    job: CentralCommandOperator
+  - type: NanoChatCard # CD
+    listNumber: false
+
+- type: entity
+  parent: IDCardStandard
+  id: CCDIntelHeadIDCard
+  name: CentComm Intel. Division Head ID
+  description: An ID card for the prepared Head of CC's Intelligence division.
+  components:
+  - type: Sprite
+    sprite: _Starlight/Objects/Misc/id_cards.rsi
+    layers:
+    - state: centcomgold
+    - sprite: *id-rsi
+      state: stripe_top
+      color: "#0c7d1d" #Starlight
+    - sprite: *id-rsi
+      state: stripe_bottom
+      color: "#0a5715" #Starlight
+    - sprite: *starlight-icon-rsi
+      offset: *icon-offset
+      state: ERTChaplain
+  - type: Item
+    sprite: Objects/Misc/id_cards.rsi
+    heldPrefix: gold
+  - type: PresetIdCard
+    job: CentralCommandOperator
+  - type: NanoChatCard # CD
+    listNumber: false
+
+# General Division ID cards
+
+- type: entity
+  parent: IDCardStandard
+  id: CCDAdminIDCard
+  name: CentComm Admin. Division ID
+  description: An ID card for a member of the CC Administration division.
+  components:
+  - type: Sprite
+    sprite: _Starlight/Objects/Misc/id_cards.rsi
+    layers:
+    - state: centcom
+    - sprite: *id-rsi
+      state: stripe_top
+      color: "#999999"
+    - sprite: *id-rsi
+      state: stripe_bottom
+      color: "#6b6b6b"
+    - sprite: *starlight-icon-rsi
+      offset: *icon-offset
+      state: ERTLeader
+  - type: Item
+    sprite: Objects/Misc/id_cards.rsi
+    heldPrefix: gold
+  - type: PresetIdCard
+    job: CentralCommandOperator
+  - type: NanoChatCard # CD
+    listNumber: false
+
+- type: entity
+  parent: IDCardStandard
+  id: CCDSecIDCard
+  name: CentComm Sec. Division ID
+  description: An ID card for a member of the CC Security division.
+  components:
+  - type: Sprite
+    sprite: _Starlight/Objects/Misc/id_cards.rsi
+    layers:
+    - state: centcom
+    - sprite: *id-rsi
+      state: stripe_top
+      color: "#999999"
+    - sprite: *id-rsi
+      state: stripe_bottom
+      color: "#6b6b6b"
+    - sprite: *starlight-icon-rsi
+      offset: *icon-offset
+      state: ERTSecurity
+  - type: Item
+    sprite: Objects/Misc/id_cards.rsi
+    heldPrefix: gold
+  - type: PresetIdCard
+    job: CentralCommandOperator
+  - type: NanoChatCard # CD
+    listNumber: false
+
+- type: entity
+  parent: IDCardStandard
+  id: CCDMedIDCard
+  name: CentComm Med. Division ID
+  description: An ID card for a member of the CC Medical division.
+  components:
+  - type: Sprite
+    sprite: _Starlight/Objects/Misc/id_cards.rsi
+    layers:
+    - state: centcom
+    - sprite: *id-rsi
+      state: stripe_top
+      color: "#999999"
+    - sprite: *id-rsi
+      state: stripe_bottom
+      color: "#6b6b6b"
+    - sprite: *starlight-icon-rsi
+      offset: *icon-offset
+      state: ERTMedical
+  - type: Item
+    sprite: Objects/Misc/id_cards.rsi
+    heldPrefix: gold
+  - type: PresetIdCard
+    job: CentralCommandOperator
+  - type: NanoChatCard # CD
+    listNumber: false
+
+- type: entity
+  parent: IDCardStandard
+  id: CCDRnDIDCard
+  name: CentComm Research Division ID
+  description: An ID card for a member of the CC Research division.
+  components:
+  - type: Sprite
+    sprite: _Starlight/Objects/Misc/id_cards.rsi
+    layers:
+    - state: centcom
+    - sprite: *id-rsi
+      state: stripe_top
+      color: "#999999"
+    - sprite: *id-rsi
+      state: stripe_bottom
+      color: "#6b6b6b"
+    - sprite: *starlight-icon-rsi
+      offset: *icon-offset
+      state: CBURN
+  - type: Item
+    sprite: Objects/Misc/id_cards.rsi
+    heldPrefix: gold
+  - type: PresetIdCard
+    job: CentralCommandOperator
+  - type: NanoChatCard # CD
+    listNumber: false
+
+- type: entity
+  parent: IDCardStandard
+  id: CCDEngiIDCard
+  name: CentComm Engi. Division ID
+  description: An ID card for a member of the CC Engineering division.
+  components:
+  - type: Sprite
+    sprite: _Starlight/Objects/Misc/id_cards.rsi
+    layers:
+    - state: centcom
+    - sprite: *id-rsi
+      state: stripe_top
+      color: "#999999"
+    - sprite: *id-rsi
+      state: stripe_bottom
+      color: "#6b6b6b"
+    - sprite: *starlight-icon-rsi
+      offset: *icon-offset
+      state: ERTEngineer
+  - type: Item
+    sprite: Objects/Misc/id_cards.rsi
+    heldPrefix: gold
+  - type: PresetIdCard
+    job: CentralCommandOperator
+  - type: NanoChatCard # CD
+    listNumber: false
+
+- type: entity
+  parent: IDCardStandard
+  id: CCDCargoIDCard
+  name: CentComm Cargo Division ID
+  description: An ID card for a member of the CC Cargo division.
+  components:
+  - type: Sprite
+    sprite: _Starlight/Objects/Misc/id_cards.rsi
+    layers:
+    - state: centcom
+    - sprite: *id-rsi
+      state: stripe_top
+      color: "#999999"
+    - sprite: *id-rsi
+      state: stripe_bottom
+      color: "#6b6b6b"
+    - sprite: *starlight-icon-rsi
+      offset: *icon-offset
+      state: CentComm
+  - type: Item
+    sprite: Objects/Misc/id_cards.rsi
+    heldPrefix: gold
+  - type: PresetIdCard
+    job: CentralCommandOperator
+  - type: NanoChatCard # CD
+    listNumber: false
+
+- type: entity
+  parent: IDCardStandard
+  id: CCDDomesticIDCard
+  name: CentComm Domestic Division ID
+  description: An ID card for a member of the CC Domestic division.
+  components:
+  - type: Sprite
+    sprite: _Starlight/Objects/Misc/id_cards.rsi
+    layers:
+    - state: centcom
+    - sprite: *id-rsi
+      state: stripe_top
+      color: "#999999"
+    - sprite: *id-rsi
+      state: stripe_bottom
+      color: "#6b6b6b"
+    - sprite: *starlight-icon-rsi
+      offset: *icon-offset
+      state: CCServiceWorker
+  - type: Item
+    sprite: Objects/Misc/id_cards.rsi
+    heldPrefix: gold
+  - type: PresetIdCard
+    job: CentralCommandOperator
+  - type: NanoChatCard # CD
+    listNumber: false
+
+- type: entity
+  parent: IDCardStandard
+  id: CCDSpecOpsIDCard
+  name: CentComm Spec. Ops. Division ID
+  description: An ID card for a member of the CC Special Operations division.
+  components:
+  - type: Sprite
+    sprite: _Starlight/Objects/Misc/id_cards.rsi
+    layers:
+    - state: centcom
+    - sprite: *id-rsi
+      state: stripe_top
+      color: "#999999"
+    - sprite: *id-rsi
+      state: stripe_bottom
+      color: "#6b6b6b"
+    - sprite: *starlight-icon-rsi
+      offset: *icon-offset
+      state: CentCommOperator
+  - type: Item
+    sprite: Objects/Misc/id_cards.rsi
+    heldPrefix: gold
+  - type: PresetIdCard
+    job: CentralCommandOperator
+  - type: NanoChatCard # CD
+    listNumber: false
+
+- type: entity
+  parent: IDCardStandard
+  id: CCDIntelIDCard
+  name: CentComm Intel. Division ID
+  description: An ID card for a member of the CC Intelligence division.
+  components:
+  - type: Sprite
+    sprite: _Starlight/Objects/Misc/id_cards.rsi
+    layers:
+    - state: centcom
+    - sprite: *id-rsi
+      state: stripe_top
+      color: "#999999"
+    - sprite: *id-rsi
+      state: stripe_bottom
+      color: "#6b6b6b"
+    - sprite: *starlight-icon-rsi
+      offset: *icon-offset
+      state: ERTChaplain
+  - type: Item
+    sprite: Objects/Misc/id_cards.rsi
+    heldPrefix: gold
+  - type: PresetIdCard
+    job: CentralCommandOperator
+  - type: NanoChatCard # CD
     listNumber: false

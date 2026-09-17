@@ -77,20 +77,9 @@
 # This explicitly now targets a role as CC Security division
 - type: entity
   id: ClothingBackpackHoldingCentcomOfficerFilled
-  parent: [ ClothingBackpackHolding, BaseChameleon, BaseCentcommContraband ]
+  parent: [ ClothingBackpackHoldingRSChameleon, BaseCentcommContraband ]
   suffix: Filled, Centcom Officer, Admeme, Chameleon
   components:
-  - type: ChameleonClothing
-    slot: [back]
-    default: ClothingBackpackHolding
-  - type: UserInterface
-    interfaces:
-      enum.StorageUiKey.Key:
-        type: StorageBoundUserInterface
-      enum.ChameleonUiKey.Key:
-        type: ChameleonBoundUserInterface
-  - type: Tag
-    tags: []
   - type: StorageFill
     contents:
       - id: RubberStampCSD
@@ -107,7 +96,6 @@
       - id: BoxSurvivalNonBreatherExtended
       - id: DoubleEmergencyNitrogenTankFilled
       - id: DoubleEmergencyOxygenTankFilled
-      - id: AgentIDCard
       - id: BoxFolderCentComClipboardThreePapers
       - id: WeaponDisablerSMG
       - id: BoxHandcuff
@@ -128,4 +116,4 @@
       - id: WeaponLightMachineGunM492CC
       - id: LightRifleHeavyMagazineIncendiary
       - id: LightRifleHeavyMagazineIncendiary
-      - id: ClothingOuterHardsuitCCSDExperimental
+      - id: ClothingOuterHardsuitCCSDH
