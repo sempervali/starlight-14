@@ -50,9 +50,9 @@
     - sprite: *id-rsi
       state: stripe_bottom
       color: "#0a5715" #Starlight
-    - sprite: *starlight-icon-rsi
+    - sprite: &ronstation-icon-rsi _Ronstation/Interface/Misc/job_icons.rsi
       offset: *icon-offset
-      state: ERTLeader
+      state: CCDivAdmin
   - type: Item
     sprite: Objects/Misc/id_cards.rsi
     heldPrefix: gold
@@ -131,9 +131,9 @@
     - sprite: *id-rsi
       state: stripe_bottom
       color: "#0a5715" #Starlight
-    - sprite: *starlight-icon-rsi
+    - sprite: *ronstation-icon-rsi
       offset: *icon-offset
-      state: CBURN
+      state: CCDivRnD
   - type: Item
     sprite: Objects/Misc/id_cards.rsi
     heldPrefix: gold
@@ -185,9 +185,9 @@
     - sprite: *id-rsi
       state: stripe_bottom
       color: "#0a5715" #Starlight
-    - sprite: *starlight-icon-rsi
+    - sprite: *ronstation-icon-rsi
       offset: *icon-offset
-      state: CentComm
+      state: CCDivCargo
   - type: Item
     sprite: Objects/Misc/id_cards.rsi
     heldPrefix: gold
@@ -212,9 +212,9 @@
     - sprite: *id-rsi
       state: stripe_bottom
       color: "#0a5715" #Starlight
-    - sprite: *starlight-icon-rsi
+    - sprite: *ronstation-icon-rsi
       offset: *icon-offset
-      state: CCServiceWorker
+      state: CCDivDomestic
   - type: Item
     sprite: Objects/Misc/id_cards.rsi
     heldPrefix: gold
@@ -239,9 +239,9 @@
     - sprite: *id-rsi
       state: stripe_bottom
       color: "#0a5715" #Starlight
-    - sprite: *starlight-icon-rsi
+    - sprite: *ronstation-icon-rsi
       offset: *icon-offset
-      state: CentCommOperator
+      state: CCDivSpecOps
   - type: Item
     sprite: Objects/Misc/id_cards.rsi
     heldPrefix: gold
@@ -266,9 +266,9 @@
     - sprite: *id-rsi
       state: stripe_bottom
       color: "#0a5715" #Starlight
-    - sprite: *starlight-icon-rsi
+    - sprite: *ronstation-icon-rsi
       offset: *icon-offset
-      state: ERTChaplain
+      state: CCDivIntel
   - type: Item
     sprite: Objects/Misc/id_cards.rsi
     heldPrefix: gold
@@ -295,9 +295,9 @@
     - sprite: *id-rsi
       state: stripe_bottom
       color: "#6b6b6b"
-    - sprite: *starlight-icon-rsi
+    - sprite: *ronstation-icon-rsi
       offset: *icon-offset
-      state: ERTLeader
+      state: CCDivAdmin
   - type: Item
     sprite: Objects/Misc/id_cards.rsi
     heldPrefix: gold
@@ -376,9 +376,9 @@
     - sprite: *id-rsi
       state: stripe_bottom
       color: "#6b6b6b"
-    - sprite: *starlight-icon-rsi
+    - sprite: *ronstation-icon-rsi
       offset: *icon-offset
-      state: CBURN
+      state: CCDivRnD
   - type: Item
     sprite: Objects/Misc/id_cards.rsi
     heldPrefix: gold
@@ -430,9 +430,9 @@
     - sprite: *id-rsi
       state: stripe_bottom
       color: "#6b6b6b"
-    - sprite: *starlight-icon-rsi
+    - sprite: *ronstation-icon-rsi
       offset: *icon-offset
-      state: CentComm
+      state: CCDivCargo
   - type: Item
     sprite: Objects/Misc/id_cards.rsi
     heldPrefix: gold
@@ -457,9 +457,9 @@
     - sprite: *id-rsi
       state: stripe_bottom
       color: "#6b6b6b"
-    - sprite: *starlight-icon-rsi
+    - sprite: *ronstation-icon-rsi
       offset: *icon-offset
-      state: CCServiceWorker
+      state: CCDivDomestic
   - type: Item
     sprite: Objects/Misc/id_cards.rsi
     heldPrefix: gold
@@ -484,9 +484,9 @@
     - sprite: *id-rsi
       state: stripe_bottom
       color: "#6b6b6b"
-    - sprite: *starlight-icon-rsi
+    - sprite: *ronstation-icon-rsi
       offset: *icon-offset
-      state: CentCommOperator
+      state: CCDivSpecOps
   - type: Item
     sprite: Objects/Misc/id_cards.rsi
     heldPrefix: gold
@@ -511,9 +511,9 @@
     - sprite: *id-rsi
       state: stripe_bottom
       color: "#6b6b6b"
-    - sprite: *starlight-icon-rsi
+    - sprite: *ronstation-icon-rsi
       offset: *icon-offset
-      state: ERTChaplain
+      state: CCDivIntel
   - type: Item
     sprite: Objects/Misc/id_cards.rsi
     heldPrefix: gold
