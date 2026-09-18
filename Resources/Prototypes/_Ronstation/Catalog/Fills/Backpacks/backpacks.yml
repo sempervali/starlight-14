@@ -121,4 +121,5 @@
       - id: LightRifleHeavyMagazineIncendiary
       - id: LightRifleHeavyMagazineIncendiary
       - id: ClothingOuterHardsuitCCSDH
+      - id: ClothingMaskGasCCSD # To go with the hardsuit. Explicitly doesn't block NV because gas masks with flash protection are very, VERY annoying to make work as you would expect.
       - id: CentCommCommunicationTablet

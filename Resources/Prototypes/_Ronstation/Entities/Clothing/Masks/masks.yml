@@ -1,0 +1,9 @@
+- type: entity
+  parent: ClothingMaskGasERT
+  id: ClothingMaskGasCCSD
+  categories: [ DoNotMap ]
+  name: security division gas mask
+  description: The gas mask of the elite of the elite, has a unique clear polymer for the eyes that attempts to allow natural nightvision.
+  components:
+  - type: FlashImmunity
+    blocksSpecialVision: false # Because otherwise this always blocks NV which is incredibly jarring. A mask does it correctly but ends up just becoming non-NV blocking because NV and masks with flash protection are pains in the rear.
