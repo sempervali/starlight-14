@@ -8,9 +8,8 @@
       state: ghost-king
     color: "#ffffff"
   requirements:
-  - !type:DiscordRolesRequirement
-    requirement: GoldEventWinnerReq
-  category: Event
+  - !type:MentorFlagRequirement # Ronstation: Flags for mentors/staff
+  category: Mentor # Ronstation: Move upstream event-limited to Mentors
 
 - type: ghostTheme
   id: CarpGames
@@ -22,9 +21,8 @@
       state: ghost-carpman
     color: "#ffffff"
   requirements:
-  - !type:DiscordRolesRequirement
-    requirement: CarpGamesReq
-  category: Event
+  - !type:MentorFlagRequirement # Ronstation: Flags for mentors/staff
+  category: Mentor # Ronstation: Move upstream event-limited to Mentors
 
 - type: ghostTheme
   id: FirstWritingContest
@@ -36,6 +34,5 @@
       state: ghost-mage
     color: "#ffffff"
   requirements:
-  - !type:DiscordRolesRequirement
-    requirement: FirstWritingContestReq
-  category: Event
+  - !type:MentorFlagRequirement # Ronstation: Flags for mentors/staff
+  category: Mentor # Ronstation: Move upstream event-limited to Mentors

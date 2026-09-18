@@ -96,6 +96,7 @@ public sealed partial class MHelpUIController : UIController, IOnSystemChanged<M
     {
 
         var isMentor = _playerManager.LocalSession is { } local && _playerRolesReq.IsMentor(local);
+        var isMentorFlagged = _adminManager.HasFlag(AdminFlags.RNSLMentor);
         var isAdmin = _adminManager.HasFlag(AdminFlags.Adminhelp);
 
         if (UIHelper != null && UIHelper.IsMentor == (isMentor || isAdmin))
@@ -103,7 +104,7 @@ public sealed partial class MHelpUIController : UIController, IOnSystemChanged<M
 
         UIHelper?.Dispose();
         var ownerUserId = _playerManager.LocalUser!.Value;
-        UIHelper = isMentor || isAdmin ? new MentorMHelpUIHandler(ownerUserId) : new UserMHelpUIHandler(ownerUserId);
+        UIHelper = (isMentor || isAdmin || isMentorFlagged) ? new MentorMHelpUIHandler(ownerUserId) : new UserMHelpUIHandler(ownerUserId);
 
         UIHelper.OnMessageSend += (ticket, textMessage, playSound) => _mentorSystem?.Send(ticket,  textMessage, playSound);
         UIHelper.OnInputTextChanged += (ticket, text) => _mentorSystem?.SendInputTextUpdated(ticket,  text.Length > 0);

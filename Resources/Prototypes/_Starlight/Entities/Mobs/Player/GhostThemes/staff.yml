@@ -8,8 +8,7 @@
       state: abomination
     color: "#ffffff"
   requirements:
-  - !type:DiscordRolesRequirement
-    requirement: StaffRolesReq
+  - !type:StaffFlagRequirement # Ronstation: Flags for mentors/staff
   category: Staff
 
 - type: ghostTheme
@@ -23,8 +22,7 @@
       state: alive
     color: "#ffffff"
   requirements:
-  - !type:DiscordRolesRequirement
-    requirement: StaffRolesReq
+  - !type:StaffFlagRequirement # Ronstation: Flags for mentors/staff
   category: Staff
 
 - type: ghostTheme
@@ -38,8 +36,7 @@
       state: ghost-buff-rat-king
     color: "#ffffff"
   requirements:
-  - !type:DiscordRolesRequirement
-    requirement: TicketsAdministratorReq
+  - !type:StaffFlagRequirement # Ronstation: Flags for mentors/staff
   category: Staff
 
 - type: ghostTheme
@@ -53,8 +50,7 @@
       state: ghost-fox
     color: "#ffffff"
   requirements:
-  - !type:DiscordRolesRequirement
-    requirement: TicketsAdministratorReq
+  - !type:StaffFlagRequirement # Ronstation: Flags for mentors/staff
   category: Staff
 
 - type: ghostTheme
@@ -68,8 +64,7 @@
       state: ghost-lizard-plushie
     color: "#ffffff"
   requirements:
-  - !type:DiscordRolesRequirement
-    requirement: TicketsAdministratorReq
+  - !type:StaffFlagRequirement # Ronstation: Flags for mentors/staff
   category: Staff
 
 - type: ghostTheme
@@ -83,8 +78,7 @@
       state: ghost-mothroach
     color: "#ffffff"
   requirements:
-  - !type:DiscordRolesRequirement
-    requirement: TicketsAdministratorReq
+  - !type:StaffFlagRequirement # Ronstation: Flags for mentors/staff
   category: Staff
 
 - type: ghostTheme
@@ -98,8 +92,7 @@
       state: ghost-scurret
     color: "#ffffff"
   requirements:
-  - !type:DiscordRolesRequirement
-    requirement: TicketsAdministratorReq
+  - !type:StaffFlagRequirement # Ronstation: Flags for mentors/staff
   category: Staff
 
 - type: ghostTheme
@@ -113,8 +106,7 @@
       state: wisp
       shader: unshaded
   requirements:
-  - !type:DiscordRolesRequirement
-    requirement: SeniorDeveloperReq
+  - !type:StaffFlagRequirement # Ronstation: Flags for mentors/staff
   category: Staff
 
 - type: ghostTheme
@@ -127,6 +119,5 @@
       sprite: _Starlight/Mobs/Customization/GhostThemes/ghosts.rsi
       state: ghost-custodian
   requirements:
-  - !type:DiscordRolesRequirement
-    requirement: DeveloperReq
+  - !type:StaffFlagRequirement # Ronstation: Flags for mentors/staff
   category: Staff

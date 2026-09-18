@@ -125,6 +125,16 @@
         NameColor = 1 << 21,
 
         /// <summary>
+        ///     Flag that grants everything normally locked behind a staff discord role.
+        /// </summary>
+        RNSLStaff = 1 << 22,
+
+        /// <summary>
+        ///     Flag that grants everything normally locked behind the mentor discord role, primarily mhelp.
+        /// </summary>
+        RNSLMentor = 1 << 23,
+
+        /// <summary>
         ///     Dangerous permissions like loading prototypes.
         /// </summary>
         Danger = 1u << 30,

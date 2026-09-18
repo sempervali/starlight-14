@@ -4,8 +4,7 @@
   description: job-description-nct
   playTimeTracker: JobNanotrasenCareerTrainer
   requirements:
-  #  - !type:RolesRequirement Ronstation: Make job whitelisting done in-game
-  #    proto: StaffAndMentorOnlyRolesReq
+    #- !type:MentorFlagRequirement # Ronstation: Flags for mentors/staff (DOES NOT WORK, MAKING SEPERATE PR)
     - !type:TraitsRequirement
       traits:
         - Iterator
