@@ -10,6 +10,8 @@
     - type: Clothing
       equipDelay: 3
       unequipDelay: 3
+      equipSound: /Audio/Mecha/mechmove03.ogg
+      unequipSound: /Audio/Mecha/mechmove03.ogg
     - type: ToggleableClothing
       clothingPrototype: ClothingHeadHelmetHardsuitCCSDH
     - type: IdClothingBlocker

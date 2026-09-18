@@ -5,10 +5,10 @@
     back: ClothingBackpackSatchelHoldingCentcomFormalFilled
     shoes: ClothingShoesBootsCombatFilled
     mask: ClothingMaskGasCentcom
-    outerClothing: ClothingOuterArmorCentcommChameleon
-    eyes: ClothingEyesGlassesCCDivHead
+    outerClothing: ClothingOuterArmorCentcommCarapace
+    eyes: ClothingEyesGlassesCentComm
     gloves: ClothingHandsGlovesCombat
-    id: CentcomPDA
+    id: CentCommDivisionPDA
     ears: ClothingHeadsetAltCentComDivHead
     belt: BoxFolderCentComClipboardThreePapers
     pocket1: WeaponDisabler
@@ -23,8 +23,8 @@
     jumpsuit: ClothingUniformJumpskirtCentcomFormalDress
     shoes: ClothingShoesBootsJackFilled
     mask: ClothingMaskGasCentcom
-    outerClothing: ClothingOuterArmorCentcommChameleon
-    eyes: ClothingEyesGlassesCCDivHead
+    outerClothing: ClothingOuterArmorCentcommCarapace
+    eyes: ClothingEyesGlassesCentComm
     gloves: ClothingHandsGlovesCombat
     id: CentcomPDA
     ears: ClothingHeadsetAltCentComDivHead
@@ -34,10 +34,8 @@
   inhand:
   - BriefcaseCentcomInspector
 - type: startingGear
-# This loadout is meant for very specific circumstances, or if the relevant character will remain on CentComm.
-# Due to the items inside, any character ON STATION with this loadout should have ERT Sec guards.
-# This explicitly now targets a role as CC Security division
-  id: CentcomOfficerGear
+#This became very specific to Semper, so I'm just gona mark it as the relevant name
+  id: CentcomSecDivHeadGear
   equipment:
     jumpsuit: ClothingUniformJumpskirtCentcommSecurityFormalWear
     back: ClothingBackpackHoldingCentcomOfficerFilled
@@ -45,10 +43,10 @@
     head: ClothingHeadHatCentcomcap
     mask: ClothingMaskGasCentcom
     neck: ClothingNeckCloakCCSDFireline
-    outerClothing: ClothingOuterArmorCentcommChameleon
+    outerClothing: ClothingOuterArmorCentcommCarapace
     gloves: ClothingHandsGlovesCombat
-    eyes: ClothingEyesHudCCDivHead # Somehow missed this in the original outfits port...
-    id: CentcomPDA
+    eyes: ClothingEyesHudCCDivHead
+    id: CentCommDivisionPDA
     ears: ClothingHeadsetAltCentComDivHead
     belt: CentcommVibrobladeSheathFilled
     pocket1: WeaponEnergyMagnumGunGreenshield
@@ -56,19 +54,4 @@
     suitstorage: WeaponRifleL10
   inhand:
   - MindShieldImplanter
-  - DeathRattleImplanterCentcomm
-
-- type: startingGear
-  id: CentcomSmartBorgiGear # they're cute and silly and I like them for harmless admemes (it should definitely only be admin controlled however)
-  equipment:
-    back: ClothingBackpackSatchelHoldingCentcomFormalFilled
-    mask: ClothingMaskWeldingGas
-    outerClothing: ClothingOuterHardsuitERTEngineer # Well rounded and can fit in the bag! Amazing!
-    eyes: ClothingEyesGlassesCCDivHead
-    id: CentcomPDA
-    ears: ClothingHeadsetAltCentComDivHead
-    belt: ClothingBeltChiefEngineerFilled
-    suitstorage: OxygenTankFilled
-  inhand:
-  - MindShieldImplanter # Turns out that yes, they can recieve implants. Probably good to have them mindshielded.
   - DeathRattleImplanterCentcomm

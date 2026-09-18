@@ -112,7 +112,8 @@
       - id: MagazinePistol40FMJ
       - id: MagazinePistol40FMJ
       - id: MagazinePistol40FMJ
-      - id: ClothingEyesHudCCDivHead
+      - id: ClothingEyesGlassesCCDivHead # This still blocks NV and does not grant NV. So that there's some semblance of balance.
+      - id: GreenLightShield # Because of course the Head of the Security Division does Greenshield work.
       - id: BodyBagCCFolded
       - id: BodyBagCCFolded
       - id: BodyBagCCFolded

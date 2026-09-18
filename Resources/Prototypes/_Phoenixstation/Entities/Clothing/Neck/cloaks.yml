@@ -3,11 +3,13 @@
   parent:  [ClothingNeckBase, BaseCentcommContraband]
   id: ClothingNeckCloakCCSDFireline
   name: CC fireline cloak
-  description: A cloak designed after the M-81 Fireline cloak, for the devoted sector CC Security Division Officer. Smells of pumpkin spice.
+  description: A heavily modified M-81 Fireline cloak, for the devoted sector CC Security Division Officer. Smells of pumpkin spice.
   suffix: Admeme, DO NOT MAP
   components:
   - type: Sprite
-    sprite: _Starlight/Clothing/Neck/Cloaks/hos_poncho.rsi
+    sprite: _Ronstation/Clothing/Neck/Cloaks/ccsechead_poncho.rsi
+  - type: Clothing
+    sprite: _Ronstation/Clothing/Neck/Cloaks/ccsechead_poncho.rsi
   - type: PointLight
     radius: 2
     energy: 2.2

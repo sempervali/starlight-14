@@ -1,0 +1,60 @@
+#CC Division Job Icons, for those I had to recolor myself
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconCCDivAdmin
+  icon:
+    sprite: &ronstation-icon-rsi /Textures/_Ronstation/Interface/Misc/job_icons.rsi
+    state: CCDivAdmin
+  jobName: job-name-ccdivadminmember
+  tags:
+  - JobIconCentComm
+
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconCCDivRnD
+  icon:
+    sprite: *ronstation-icon-rsi
+    state: CCDivRnD
+  jobName: job-name-ccdivrndhead
+  tags:
+  - JobIconCentComm
+
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconCCDivCargo
+  icon:
+    sprite: *ronstation-icon-rsi
+    state: CCDivCargo
+  jobName: job-name-ccdivcargohead
+  tags:
+  - JobIconCentComm
+
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconCCDivDomestic
+  icon:
+    sprite: *ronstation-icon-rsi
+    state: CCDivDomestic
+  jobName: job-name-ccdivdomestichead
+  tags:
+  - JobIconCentComm
+
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconCCDivIntel
+  icon:
+    sprite: *ronstation-icon-rsi
+    state: CCDivIntel
+  jobName: job-name-ccdivintelhead
+  tags:
+  - JobIconCentComm
+
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconCCDivSpecOps
+  icon:
+    sprite: *ronstation-icon-rsi
+    state: CCDivSpecOps
+  jobName: job-name-ccdivspecopshead
+  tags:
+  - JobIconCentComm
