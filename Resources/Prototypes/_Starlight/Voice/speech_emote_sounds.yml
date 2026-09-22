@@ -289,7 +289,7 @@
     Scream:
       collection: ShadekinMaleScreams
     Laugh:
-      collection: MaleLaugh
+      collection: ShadowkinMaleLaughs
     Sneeze:
       collection: MaleSneezes
     Cough:
@@ -301,7 +301,7 @@
     Sigh:
       collection: MaleSigh
     Crying:
-      collection: MaleCry
+      path: /Audio/Voice/Shadekin/shadekin_cry.ogg # Ronstation - port of a port, new shadekin sounds
     Whistle:
       collection: Whistles
     Weh:
@@ -331,7 +331,7 @@
     Scream:
       collection: ShadekinFemaleScreams
     Laugh:
-      collection: FemaleLaugh
+      collection: ShadowkinFemaleLaughs
     Sneeze:
       collection: FemaleSneezes
     Cough:
@@ -343,7 +343,7 @@
     Sigh:
       collection: FemaleSigh
     Crying:
-      collection: FemaleCry
+      path: /Audio/Voice/Shadekin/shadekin_cry.ogg # Ronstation - port of a port, new shadekin sounds
     Whistle:
       collection: Whistles
     Weh:

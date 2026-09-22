@@ -1,0 +1,5 @@
+- type: speechVerb
+  id: Shadowkin
+  name: chat-speech-verb-name-shadowkin
+  speechVerbStrings:
+  - chat-speech-verb-shadowkin-1
