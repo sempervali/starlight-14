@@ -3,8 +3,8 @@ name: Update Changelog
 on:
   push:
     branches:
-      - Starlight
-      - starlight-dev
+      - rs-live
+      - rs-dev
 
 
 permissions:
@@ -14,6 +14,7 @@ permissions:
 
 env:
  BRANCH_NAME: ${{ github.ref_name	 }}
+ GITHUB_TOKEN: ${{ secrets.BOT_TOKEN }}
 
 jobs:
   wait-for-que:
@@ -33,7 +34,7 @@ jobs:
 
       - name: Wait for Que to finish
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.BOT_TOKEN }}
           GITHUB_REPOSITORY: ${{ github.repository }}
           WORKFLOW_RUN_NUMBER: ${{ github.run_number }}
           WORKFLOW_NAME: ${{ github.workflow }}
@@ -52,7 +53,7 @@ jobs:
         id: get_pr
         uses: actions/github-script@v6
         with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
+          github-token: ${{ secrets.BOT_TOKEN }}
           script: |
             const pr = await github.rest.repos.listPullRequestsAssociatedWithCommit({
               owner: context.repo.owner,
@@ -87,8 +88,8 @@ jobs:
       - name: Parse PR and Update Changelog
         if: steps.get_pr.outputs.result != ''
         env:
-          CHANGELOG_FILE_PATH: 'Resources/Changelog/ChangelogStarlight.yml'
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          CHANGELOG_FILE_PATH: 'Resources/Changelog/ChangelogRonstation.yml'
+          GITHUB_TOKEN: ${{ secrets.BOT_TOKEN }}
           PR_NUMBER: ${{ steps.get_pr.outputs.result }}
           GITHUB_REPOSITORY: ${{ github.repository }}
         run: |
@@ -108,8 +109,8 @@ jobs:
       - name: Commit and push changes
         if: steps.get_pr.outputs.result != ''
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "${{ vars.CHANGELOG_USER }}"
+          git config --global user.email "${{ vars.CHANGELOG_EMAIL }}"
           git add "Resources/Changelog/ChangelogStarlight.yml"
           if git diff --cached --quiet; then
             echo "No changes to commit."

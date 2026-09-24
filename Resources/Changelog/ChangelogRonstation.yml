@@ -1,0 +1,9 @@
+Entries:
+- author: Semper
+  changes:
+  - message: This is a dummy change to allow the system to work correctly. You can ignore this entry.
+    type: Add
+  id: 1
+  time: '2026-09-23T15:53:55.000000+00:00'
+  url: https://github.com/RonStation/starlight-14
+Order: -2
