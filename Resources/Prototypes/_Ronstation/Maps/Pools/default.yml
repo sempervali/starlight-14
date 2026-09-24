@@ -1,0 +1,30 @@
+# Yes, this is a copy of SL's map pool, since we're likely not redoing EVERY SINGLE MAP.
+- type: gameMapPool
+  id: DefaultStarlightMapPool
+  maps:
+  - StarlightBagel
+  - StarlightCog
+  - StarlightCork
+  - StarlightFland
+  - StarlightHotel
+  - StarlightLagan
+  - StarlightLeth
+  - StarlightNovoLobster
+  - StarlightManor
+  - StarlightMing
+  - StarlightOasis
+  - StarlightOrwell
+  - RonstationAtlas4
+  - StarlightSaltern
+  - StarlightSepultum
+  - StarlightStarboard
+  - StarlightKiloton
+  - StarlightElkridge
+  - StarlightPrism
+  - StarlightSilica
+  - StarlightCluster
+  - StarlightBox
+  - StarlightPlasma
+  - StarlightPacked
+  - StarlightSpaceMall
+  - StarlightSerpentcrest

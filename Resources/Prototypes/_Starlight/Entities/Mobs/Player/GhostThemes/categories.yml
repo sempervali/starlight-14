@@ -32,7 +32,7 @@
   id: Tester
   name: Tester
   priority: 6
-  hideIfNoUnlocks: true
+  hideIfNoUnlocks: false #Ronstation: Feel like some of these would be cute to give admins instead.
 
   # When filtering, hide all other categories, show this one.
 - type: ghostThemeCategory

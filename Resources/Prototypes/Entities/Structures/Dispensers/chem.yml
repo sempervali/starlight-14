@@ -59,15 +59,30 @@
         - MachineLayer
   # Starlight-start: Generatable Reagents
   - type: ReagentDispenser
-    generatableReagents:
-      Iron: 2 # ReagentId: x energy for 1 quantity
-      Carbon: 2
-      Copper: 2
-      Hydrogen: 2
-      Oxygen: 0 # You really can't pump oxygen or generate it on 2525?
-      Sugar: 2
-      Silicon: 5
-      Phosphorus: 5
+    generatableReagents: #Ronstation start: Casual chemistry, AL port
+      Aluminium: 1
+      Carbon: 1
+      Chlorine: 1
+      Copper: 1
+      Ethanol: 1
+      Fluorine: 1
+      Hydrogen: 1
+      Iodine: 1
+      Iron: 1
+      Lithium: 1
+      Mercury: 1
+      Nitrogen: 1
+      Oxygen: 1
+      Phosphorus: 1
+      Potassium: 1
+      Radium: 1
+      Silicon: 1
+      Sodium: 1
+      Sugar: 1
+      Sulfur: 1
+      SulfuricAcid: 1
+      Water: 1
+      WeldingFuel: 1 #Ronstation end: Casual chemistry, AL port
   - type: WiresVisuals
   - type: Appearance
   - type: BatteryVisuals
@@ -79,30 +94,30 @@
   parent: ChemDispenserEmpty
   components:
   - type: ReagentDispenser
-  - type: EntityTableContainerFill
-    containers:
-      storagebase: !type:AllSelector
-        children:
-        - id: JugAluminium
-#        - id: JugCarbon
-        - id: JugChlorine
-#        - id: JugCopper
-        - id: JugEthanol
-        - id: JugFluorine
-#        - id: JugSugar
-#        - id: JugHydrogen
-        - id: JugIodine
-#        - id: JugIron
-        - id: JugLithium
-        - id: JugMercury
-        - id: JugNitrogen
-#        - id: JugOxygen
-#        - id: JugPhosphorus
-        - id: JugPotassium
-        - id: JugRadium
-#        - id: JugSilicon
-        - id: JugSodium
-        - id: JugSulfur
+#  - type: EntityTableContainerFill #Ronstation start: Casual chemistry, AL port
+#    containers:
+#      storagebase: !type:AllSelector
+#        children:
+#        - id: JugAluminium
+##        - id: JugCarbon
+#        - id: JugChlorine
+##        - id: JugCopper
+#        - id: JugEthanol
+#        - id: JugFluorine
+##        - id: JugSugar
+##        - id: JugHydrogen
+#        - id: JugIodine
+##        - id: JugIron
+#        - id: JugLithium
+#        - id: JugMercury
+#        - id: JugNitrogen
+##        - id: JugOxygen
+##        - id: JugPhosphorus
+#        - id: JugPotassium
+#        - id: JugRadium
+##        - id: JugSilicon
+#        - id: JugSodium
+#        - id: JugSulfur #Ronstation end: Casual chemistry, AL port
   # Starlight-start: Filled powercell slot
   - type: PowerCellSlot
     cellSlotId: cell_slot

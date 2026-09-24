@@ -37,20 +37,32 @@
           - MechReactor
         #Starlight End
   # Starlight end
+  # Ronstation start: Forgot the coffee! AL didn't actually do this, shockingly...
+  - type: ReagentDispenser
+    generatableReagents:
+      Coffee: 1
+      CoffeeLiqueur: 1
+      Cream: 1
+      GreenTea: 1
+      Ice: 1
+      Sugar: 1
+      Tea: 1
+  # Ronstation end
 
 - type: entity
   parent: CoffeeDispenserEmpty
   id: CoffeeDispenser
-  suffix: Filled
-  components:
-  - type: EntityTableContainerFill
-    containers:
-      storagebase: !type:AllSelector
-        children:
-        - id: DrinkCoffeeJug
-        - id: DrinkCreamCartonXL
-        - id: DrinkGreenTeaJug
-        - id: DrinkIceJug
-        - id: DrinkSugarJug
-        - id: DrinkTeaJug
-        - id: DrinkCoffeeLiqueurBottleFull
+  suffix: Filled # Ronstation start: Removing redundant fills
+#  components:
+#  - type: EntityTableContainerFill
+#    containers:
+#      storagebase: !type:AllSelector
+#        children:
+#        - id: DrinkCoffeeJug
+#        - id: DrinkCreamCartonXL
+#        - id: DrinkGreenTeaJug
+#        - id: DrinkIceJug
+#        - id: DrinkSugarJug
+#        - id: DrinkTeaJug
+#        - id: DrinkCoffeeLiqueurBottleFull
+# Ronstation end: Removing redundant fills

@@ -1,0 +1,79 @@
+- type: gameMap
+  id: RonstationAtlas4
+  mapName: 'Atlas-IV'
+  mapPath: /Maps/_Ronstation/atlas-4.yml
+  minPlayers: 0
+  maxPlayers: 35
+  stations:
+    Atlas3:
+      stationProto: StandardNanotrasenStation
+      components:
+      - type: StationNameSetup
+        mapNameTemplate: '{0} Atlas Assembly IV'
+        nameGenerator:
+          !type:NanotrasenNameGenerator
+          prefixCreator: '-ACS'
+      - type: StationEmergencyShuttle
+        emergencyShuttlePath: /Maps/Ronstation/Shuttles/emergency_small.yml
+      - type: StationJobs
+        availableJobs:
+          # command
+          Captain: [ 1, 1 ]
+          HeadOfPersonnel: [ 1, 1 ]
+          HeadOfSecurity: [ 1, 1 ]
+          ChiefMedicalOfficer: [ 1, 1 ]
+          ChiefEngineer: [ 1, 1 ]
+          ResearchDirector: [ 1, 1 ]
+          Quartermaster: [ 1, 1 ]
+          # service
+          Bartender: [ 1, 1 ]
+          Botanist: [ 1, 1 ]
+          Chef: [ 1, 1 ]
+          Janitor: [ 1, 1 ]
+          Chaplain: [ 1, 1 ]
+          ServiceWorker: [ 1, 1 ]
+          Performer: [ 1, 1 ]
+          RadioHost: [ 1, 1 ]
+          Clown: [ 1, 1 ]
+          Mime: [ 1, 1 ]
+          # engineering
+          AtmosphericTechnician: [ 2, 2 ]
+          StationEngineer: [ 2, 2 ]
+          TechnicalAssistant: [ 1, 1 ]
+          # medical
+          Chemist: [ 2, 2 ]
+          Surgeon: [ 1, 1 ]
+          Paramedic: [ 1, 1 ]
+          Psychologist: [ 1, 1 ]
+          MedicalDoctor: [ 2, 2 ]
+          MedicalIntern: [ 1, 1 ]
+          # science
+          Scientist: [ 2, 2 ]
+          Roboticist: [ 2, 2 ]
+          ResearchAssistant: [ 1, 1 ]
+          # security
+          Warden: [ 1, 1 ]
+          DutyOfficer: [ 1, 1 ]
+          SecurityOfficer: [ 2, 2 ]
+          Detective: [ 1, 1 ]
+          SecurityCadet: [ 1, 1 ]
+          Lawyer: [ 1, 1 ]
+          # cargo
+          SalvageLead: [ 1, 1 ]
+          SalvageSpecialist: [ 1, 1 ] # Only one. You know who you are. Give station materials, play mining instead!!
+          MiningSpecialist: [ 2, 4 ] # Mining is not Salvage. Actually play the station roles in the station game!
+          CargoTechnician: [ 3, 3 ]
+          MailTech: [ 1, 2 ]
+          # civilian
+          AssistantManager: [1, 1]
+          Assistant: [ -1, -1 ]
+          # silicon
+          StationAi: [ 1, 1 ]
+          Borg: [ 2, 2 ]
+          # Law
+          Magistrate: [ 1, 1 ]
+          IAA: [ 2, 2 ]
+          # Representatives
+          BlueShield: [ 1, 1 ]
+          NanoTrasenRepresentative: [ 1, 1 ]
+          NanotrasenCareerTrainer: [ 1, 2 ]

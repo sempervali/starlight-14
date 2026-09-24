@@ -29,10 +29,10 @@
       sprite: _Starlight/Mobs/Customization/GhostThemes/clown.rsi
       state: clown
     color: "#ffffff"
-  requirements:
-  - !type:DiscordRolesRequirement
-    requirement: PatronReq
-  category: Patron
+#  requirements:
+#  - !type:DiscordRolesRequirement
+#    requirement: PatronReq
+  category: Public # Ronstation: Make (non-staff) ghost themes public
 
 - type: ghostTheme
   id: FaithlessTheme
@@ -43,10 +43,10 @@
       sprite: _Starlight/Mobs/Customization/GhostThemes/faithless.rsi
       state: faithless
     color: "#ffffff"
-  requirements:
-  - !type:DiscordRolesRequirement
-    requirement: PatronReq
-  category: Patron
+#  requirements:
+#  - !type:DiscordRolesRequirement
+#    requirement: PatronReq
+  category: Public # Ronstation: Make (non-staff) ghost themes public
 
 - type: ghostTheme
   id: MushroomTheme
@@ -57,10 +57,10 @@
       sprite: _Starlight/Mobs/Customization/GhostThemes/mushroom.rsi
       state: mushroom
     color: "#ffffff"
-  requirements:
-  - !type:DiscordRolesRequirement
-    requirement: PatronReq
-  category: Patron
+#  requirements:
+#  - !type:DiscordRolesRequirement
+#    requirement: PatronReq
+  category: Public # Ronstation: Make (non-staff) ghost themes public
 
 - type: ghostTheme
   id: WalkerTheme
@@ -71,10 +71,10 @@
       sprite: _Starlight/Mobs/Customization/GhostThemes/walker.rsi
       state: walker
     color: "#ffffff"
-  requirements:
-  - !type:DiscordRolesRequirement
-    requirement: PatronReq
-  category: Patron
+#  requirements:
+#  - !type:DiscordRolesRequirement
+#    requirement: PatronReq
+  category: Public # Ronstation: Make (non-staff) ghost themes public
 
 - type: ghostTheme
   id: ShadowDemon

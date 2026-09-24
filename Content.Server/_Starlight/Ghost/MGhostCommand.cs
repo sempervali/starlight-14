@@ -1,3 +1,4 @@
+using Content.Server.Administration;
 using Content.Server.GameTicking;
 using Content.Shared.Administration;
 using Content.Shared.Ghost;
@@ -9,6 +10,7 @@ using Robust.Shared.Console;
 
 namespace Content.Server._Starlight.Ghost;
 
+[AdminCommand(AdminFlags.RNSLMentor)]
 [UsedImplicitly, AnyCommand]
 public sealed partial class MGhostCommand : LocalizedCommands
 {

@@ -1,0 +1,19 @@
+- type: gameMap
+  id: Dev-ron
+  mapName: Dev-ron
+  mapPath: /Maps/_Ronstation/Test/dev_map.yml
+  minPlayers: 0
+  stations:
+    Dev:
+      stationProto: StandardNanotrasenStation
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: "Dev"
+        - type: StationJobs
+          availableJobs:
+            Captain: [ -1, -1 ]
+            BlueShield: [ -1, -1 ]
+            NanotrasenCareerTrainer: [ -1, -1 ]
+            NanoTrasenRepresentative: [ -1, -1 ]
+            CentralCommandOfficial: [ -1, -1 ]
+            Assistant: [ -1, -1]

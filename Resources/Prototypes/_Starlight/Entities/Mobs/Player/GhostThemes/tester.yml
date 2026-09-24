@@ -64,10 +64,10 @@
       sprite: _Starlight/Mobs/Customization/GhostThemes/ghosts.rsi
       state: ghost-ian
     color: "#ffffff"
-  requirements:
-  - !type:DiscordRolesRequirement
-    requirement: TesterReq
-  category: Tester
+#  requirements:
+#  - !type:DiscordRolesRequirement
+#    requirement: TesterReq
+  category: Public # Ronstation: Make (non-staff) ghost themes public
 
 - type: ghostTheme
   id: IanCute
@@ -79,10 +79,10 @@
       sprite: _Starlight/Mobs/Customization/GhostThemes/ghosts.rsi
       state: ghost-ian_cute
     color: "#ffffff"
-  requirements:
-  - !type:DiscordRolesRequirement
-    requirement: TesterReq
-  category: Tester
+#  requirements:
+#  - !type:DiscordRolesRequirement
+#    requirement: TesterReq
+  category: Public # Ronstation: Make (non-staff) ghost themes public
 
 - type: ghostTheme
   id: Skeleton
@@ -94,10 +94,10 @@
       sprite: _Starlight/Mobs/Customization/GhostThemes/ghosts.rsi
       state: ghost-skeleton
     color: "#ffffff"
-  requirements:
-  - !type:DiscordRolesRequirement
-    requirement: TesterReq
-  category: Tester
+#  requirements:
+#  - !type:DiscordRolesRequirement
+#    requirement: TesterReq
+  category: Public # Ronstation: Make (non-staff) ghost themes public
 
 - type: ghostTheme
   id: Sheet
@@ -124,7 +124,7 @@
       sprite: _Starlight/Mobs/Customization/GhostThemes/ghosts.rsi
       state: ghost-cat
     color: "#ffffff"
-  requirements:
-  - !type:DiscordRolesRequirement
-    requirement: TesterReq
-  category: Tester
+#  requirements:
+#  - !type:DiscordRolesRequirement
+#    requirement: TesterReq
+  category: Public # Ronstation: Make (non-staff) ghost themes public
