@@ -2,7 +2,7 @@
   id: StarlightElkridge
   mapName: 'Elkridge Depot'
   mapPath: /Maps/_Starlight/Stations/Elkridge.yml
-  minPlayers: 15
+  minPlayers: 0 # Ronstation: Wait, why isn't this in the lowpop pool? We can change it back if it doesn't work
   maxPlayers: 75
   stations:
     StarlightElkridge:

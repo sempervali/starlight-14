@@ -853,6 +853,20 @@
       Sugar: 2
       Silicon: 5
       Phosphorus: 5
+      Aluminium: 2 # Ronstation start: Feature parity with chem dispenser minus welding fuel, additional power costs as the downside for automation.
+      Chlorine: 2
+      Ethanol: 2
+      Fluorine: 2
+      Iodine: 2
+      Lithium: 5
+      Mercury: 5
+      Nitrogen: 1
+      Potassium: 2
+      Radium: 5
+      Sodium: 2
+      Sulfur: 2
+      SulfuricAcid: 4
+      Water: 1 # Ronstation end
   - type: Plungeable
   - type: PlumbingOutlet
     solutionName: buffer

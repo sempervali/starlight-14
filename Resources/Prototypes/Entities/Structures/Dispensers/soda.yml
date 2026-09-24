@@ -37,32 +37,60 @@
           - MechReactor
         #Starlight End
   # Starlight end
-
+  - type: ReagentDispenser #Start Ronstation: AL port
+    generatableReagents:
+      Coffee: 1
+      Cola: 1
+      Cream: 1
+      DrGibb: 1
+      EnergyDrink: 1
+      GreenTea: 1
+      Grenadine: 1
+      Ice: 1
+      IcedTea: 1
+      JuiceLemon: 1
+      JuiceLime: 1
+      JuiceOrange: 1
+      JuicePineapple: 1
+      JuiceTomato: 1
+      LemonLime: 1
+      RootBeer: 1
+      PwrGame: 1
+      ShamblersJuice: 1
+      SodaWater: 1
+      SolDry: 1
+      SpaceMountainWind: 1
+      SpaceUp: 1
+      Sugar: 1
+      Tea: 1
+      TonicWater: 1
+      Water: 1 #End Ronstation: AL port
 - type: entity
   parent: SodaDispenserEmpty
   id: SodaDispenser
   suffix: Filled
-  components:
-  - type: EntityTableContainerFill
-    containers:
-      storagebase: !type:AllSelector
-        children:
-        - id: DrinkCoconutWaterJug
-        - id: DrinkCoffeeJug
-        - id: DrinkColaBottleFull
-        - id: DrinkCreamCartonXL
-        - id: DrinkDrGibbJug
-        - id: DrinkEnergyDrinkJug
-        - id: DrinkGreenTeaJug
-        - id: DrinkIceJug
-        - id: DrinkJuiceLimeCartonXL
-        - id: DrinkJuiceOrangeCartonXL
-        - id: DrinkLemonLimeJug
-        - id: DrinkRootBeerJug
-        - id: DrinkSodaWaterBottleFull
-        - id: DrinkSpaceMountainWindBottleFull
-        - id: DrinkSpaceUpBottleFull
-        - id: DrinkSugarJug
-        - id: DrinkTeaJug
-        - id: DrinkTonicWaterBottleFull
-        - id: DrinkWaterMelonJuiceJug
+#  components: #Start Ronstation: AL port
+#  - type: EntityTableContainerFill
+#    containers:
+#      storagebase: !type:AllSelector
+#        children:
+#        - id: DrinkCoconutWaterJug
+#        - id: DrinkCoffeeJug
+#        - id: DrinkColaBottleFull
+#        - id: DrinkCreamCartonXL
+#        - id: DrinkDrGibbJug
+#        - id: DrinkEnergyDrinkJug
+#        - id: DrinkGreenTeaJug
+#        - id: DrinkIceJug
+#        - id: DrinkJuiceLimeCartonXL
+#        - id: DrinkJuiceOrangeCartonXL
+#        - id: DrinkLemonLimeJug
+#        - id: DrinkRootBeerJug
+#        - id: DrinkSodaWaterBottleFull
+#        - id: DrinkSpaceMountainWindBottleFull
+#        - id: DrinkSpaceUpBottleFull
+#        - id: DrinkSugarJug
+#        - id: DrinkTeaJug
+#        - id: DrinkTonicWaterBottleFull
+#        - id: DrinkWaterMelonJuiceJug
+#End Ronstation: AL port

@@ -38,26 +38,47 @@
           tags:
           - MechReactor
         #Starlight End
-  # Starlight end
+  # Starlight
+  #Ronstation start: AL port
+  - type: ReagentDispenser
+    generatableReagents:
+      Absinthe: 1
+      Ale: 1
+      Beer: 1
+      CoconutRum: 1
+      CoffeeLiqueur: 1
+      Cognac: 1
+      BlueCuracao: 1
+      Gin: 1
+      Mead: 1
+      MelonLiquor: 1
+      Rum: 1
+      Sake: 1
+      Tequila: 1
+      Vermouth: 1
+      Vodka: 1
+      Whiskey: 1
+      Wine: 1
+  #Ronstation end: AL port
 
 - type: entity
   id: BoozeDispenser
   suffix: Filled
   parent: BoozeDispenserEmpty
-  components:
-  - type: EntityTableContainerFill
-    containers:
-      storagebase: !type:AllSelector
-        children:
-        - id: DrinkAleBottleFullGrowler
-        - id: DrinkBeerGrowler
-        - id: DrinkCoffeeLiqueurBottleFull
-        - id: DrinkCognacBottleFull
-        - id: DrinkGinBottleFull
-        - id: DrinkMeadJug
-        - id: DrinkRumBottleFull
-        - id: DrinkTequilaBottleFull
-        - id: DrinkVermouthBottleFull
-        - id: DrinkVodkaBottleFull
-        - id: DrinkWhiskeyBottleFull
-        - id: DrinkWineBottleFull
+#  components: # Ronstation AL port
+#  - type: EntityTableContainerFill
+#    containers:
+#      storagebase: !type:AllSelector
+#        children:
+#        - id: DrinkAleBottleFullGrowler
+#        - id: DrinkBeerGrowler
+#        - id: DrinkCoffeeLiqueurBottleFull
+#        - id: DrinkCognacBottleFull
+#        - id: DrinkGinBottleFull
+#        - id: DrinkMeadJug
+#        - id: DrinkRumBottleFull
+#        - id: DrinkTequilaBottleFull
+#        - id: DrinkVermouthBottleFull
+#        - id: DrinkVodkaBottleFull
+#        - id: DrinkWhiskeyBottleFull
+#        - id: DrinkWineBottleFull
