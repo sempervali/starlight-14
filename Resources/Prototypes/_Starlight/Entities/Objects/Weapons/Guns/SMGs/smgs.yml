@@ -56,6 +56,8 @@
   - type: Appearance
   - type: ChamberMagazineAmmoProvider
     autoEject: true
+    soundAutoEject: #Ronstation: Custom eject alarm sound for NT guns
+      path: /Audio/_Ronstation/Weapons/Guns/EmptyAlarm/nt_empty_alarm.ogg
   - type: GunWieldBonus
     minAngle: 0
     maxAngle: 0
