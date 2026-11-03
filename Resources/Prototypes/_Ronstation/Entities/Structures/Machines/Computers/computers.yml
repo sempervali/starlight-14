@@ -2,7 +2,6 @@
 - type: entity
   parent: ComputerComms
   id: ComputerCommsSalvage
-  categories: [ ShouldMapATS ]
   name: salvage communications console
   description: A computer used to make station wide announcements via keyboard. Cannot set alert level or call the shuttle.
   components:
@@ -22,7 +21,7 @@
     - type: AccessReader
       access: [[ "SalvageLead" ]]
     - type: CommunicationsConsole
-      title: comms-console-announcement-title-itg
+      title: comms-console-announcement-title-itgsalv
       sound: /Audio/_Starlight/Announcements/announce2.ogg
       color: "#963dca"
       settableAlertLevels: []
@@ -31,7 +30,7 @@
     - type: SecureCommandTerminalConsole
       enabled: false
     - type: Computer
-      board: CargoCommsComputerCircuitboard
+      board: SalvageCommsComputerCircuitboard
     - type: PointLight
       radius: 2.5
       energy: 1.5
@@ -41,7 +40,7 @@
   parent: ComputerComms
   id: ComputerCommsITG
   categories: [ DoNotMap ]
-  name: cargo communications console
+  name: trade guild communications console
   description: A computer used to make station wide announcements via keyboard. Cannot set alert level or call the shuttle.
   components:
     - type: Sprite
@@ -62,7 +61,7 @@
     - type: CommunicationsConsole
       title: comms-console-announcement-title-itg
       sound: /Audio/_Starlight/Announcements/announce2.ogg
-      color: "#963dca"
+      color: "#b48b57"
       settableAlertLevels: []
       canBroadcast: false
       canShuttle: false
@@ -74,3 +73,24 @@
       radius: 2.5
       energy: 1.5
       color: "#b48b57"
+
+# Filled varients (Strange that SL defines it like this?)
+- type: entity
+  parent: ComputerCommsSalvage
+  id: ComputerCommsSalvageFilled
+  suffix: Filled, ShouldMapATS
+  components:
+    - type: ItemSlots
+      slots:
+        cell_slot:
+          startingItem: PowerCellHigh
+- type: entity
+  parent: ComputerCommsITG
+  id: ComputerCommsITGFilled
+  categories: [ DoNotMap ]
+  suffix: Filled, DO NOT MAP
+  components:
+    - type: ItemSlots
+      slots:
+        cell_slot:
+          startingItem: PowerCellHigh

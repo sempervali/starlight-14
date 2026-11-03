@@ -10,7 +10,7 @@
         children:
         - id: SalvageTechFabCircuitboard
         - id: SalvageMagnetMachineCircuitboard
-        - id: SalvageExpeditionsComputerCiruitboard
-        - id: SalvageJobBoardComputerCiruitboard
+        - id: SalvageExpeditionsComputerCircuitboard
+        - id: SalvageJobBoardComputerCircuitboard
         - id: SalvageCommsComputerCircuitboard
         - id: SalvageShuttleConsoleCircuitboard
