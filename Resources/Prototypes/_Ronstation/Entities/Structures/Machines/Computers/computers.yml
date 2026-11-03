@@ -1,0 +1,76 @@
+# Salvlead Comms Computer
+- type: entity
+  parent: ComputerComms
+  id: ComputerCommsSalvage
+  categories: [ ShouldMapATS ]
+  name: salvage communications console
+  description: A computer used to make station wide announcements via keyboard. Cannot set alert level or call the shuttle.
+  components:
+    - type: Sprite
+      layers:
+        - map: ["computerLayerBody"]
+          state: computer
+        - map: ["computerLayerKeyboard"]
+          state: generic_keyboard
+        - map: ["computerLayerScreen"]
+          state: comm-sup
+          sprite: _Starlight/Structures/Machines/computers.rsi
+        - map: ["computerLayerKeys"]
+          state: generic_keys
+        - map: [ "enum.WiresVisualLayers.MaintenancePanel" ]
+          state: generic_panel_open
+    - type: AccessReader
+      access: [[ "SalvageLead" ]]
+    - type: CommunicationsConsole
+      title: comms-console-announcement-title-itg
+      sound: /Audio/_Starlight/Announcements/announce2.ogg
+      color: "#963dca"
+      settableAlertLevels: []
+      canBroadcast: false
+      canShuttle: false
+    - type: SecureCommandTerminalConsole
+      enabled: false
+    - type: Computer
+      board: CargoCommsComputerCircuitboard
+    - type: PointLight
+      radius: 2.5
+      energy: 1.5
+      color: "#b48b57"
+# General ISG; added because it doesn't exist and might as well for admeme usage
+- type: entity
+  parent: ComputerComms
+  id: ComputerCommsITG
+  categories: [ DoNotMap ]
+  name: cargo communications console
+  description: A computer used to make station wide announcements via keyboard. Cannot set alert level or call the shuttle.
+  components:
+    - type: Sprite
+      layers:
+        - map: ["computerLayerBody"]
+          state: computer
+        - map: ["computerLayerKeyboard"]
+          state: generic_keyboard
+        - map: ["computerLayerScreen"]
+          state: comm-sup
+          sprite: _Starlight/Structures/Machines/computers.rsi
+        - map: ["computerLayerKeys"]
+          state: generic_keys
+        - map: [ "enum.WiresVisualLayers.MaintenancePanel" ]
+          state: generic_panel_open
+    - type: AccessReader
+      access: [[ "SalvageLead" ]] # TODO: Update this if a general ITG access is added by upstream (or by another contributor if admeme content for ITG is desired)
+    - type: CommunicationsConsole
+      title: comms-console-announcement-title-itg
+      sound: /Audio/_Starlight/Announcements/announce2.ogg
+      color: "#963dca"
+      settableAlertLevels: []
+      canBroadcast: false
+      canShuttle: false
+    - type: SecureCommandTerminalConsole
+      enabled: false
+    - type: Computer
+      board: ITGCommsComputerCircuitboard
+    - type: PointLight
+      radius: 2.5
+      energy: 1.5
+      color: "#b48b57"
