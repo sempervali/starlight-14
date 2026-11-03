@@ -7,6 +7,7 @@
     - id: RubberStampSalvageLead
     - id: ClothingNeckMantleDecoratedSalvager
     - id: ITGTrackerImplanter
+    - id: BoxSalvLeadCircuitboards #Ronstation: Comms Console for SalvLead
     - id: SalvageTechFabFlatpack
     - id: Multitool
 

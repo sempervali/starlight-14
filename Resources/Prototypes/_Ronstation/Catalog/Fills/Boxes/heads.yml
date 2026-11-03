@@ -1,0 +1,16 @@
+# Salvlead
+- type: entity
+  parent: ToteBase
+  id: BoxSalvLeadCircuitboards
+  name: salvage circuit tote
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:AllSelector
+        children:
+        - id: SalvageTechFabCircuitboard
+        - id: SalvageMagnetMachineCircuitboard
+        - id: SalvageExpeditionsComputerCiruitboard
+        - id: SalvageJobBoardComputerCiruitboard
+        - id: SalvageCommsComputerCircuitboard
+        - id: SalvageShuttleConsoleCircuitboard
