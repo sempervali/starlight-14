@@ -3,6 +3,7 @@
   id: LockerFillSalvageLead
   table: !type:AllSelector
     children:
+    - id: BoxSalvLeadCircuitboards # Ronstation: Circuit tote for SalvLead
     - id: BoxFolderClipboardSalvageLead
     - id: RubberStampSalvageLead
     - id: ClothingNeckMantleDecoratedSalvager
