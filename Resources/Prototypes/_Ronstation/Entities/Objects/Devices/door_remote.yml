@@ -14,3 +14,19 @@
   - type: Access
   - type: DoorRemote
     includeUserAccess: true
+
+- type: entity
+  parent: [DoorRemoteDefault, BaseSalvageContraband]
+  id: DoorRemoteSalvage
+  name: salvage door remote
+  components:
+  - type: Sprite
+    layers:
+    - state: door_remotebase
+    - state: door_remotelightscolour
+      color: "#8D1C99"
+    - state: door_remotescreencolour
+      color: "#BE25CE"
+  - type: Access
+    groups:
+    - Salvage

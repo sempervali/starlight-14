@@ -1,0 +1,7 @@
+- type: accessGroup # Access just for the salvage remote, mostly.
+  id: Salvage
+  tags:
+  - SalvageLead
+  - Salvage
+  - Mining
+  - Shuttle

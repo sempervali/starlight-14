@@ -1,0 +1,20 @@
+- type: entity
+  parent: [ BaseComputerCircuitboard, BaseSalvageContraband ]
+  id: SalvageCommsComputerCircuitboard
+  name: salvage communications console board
+  description: A computer printed circuit board for a cargo communications console.
+  components:
+    - type: Sprite
+      state: cpu_supply
+    - type: ComputerBoard
+      prototype: ComputerCommsSalvage
+- type: entity
+  parent: [ BaseComputerCircuitboard, BaseSalvageContraband ]
+  id: ITGCommsComputerCircuitboard
+  name: trade guild communications console board
+  description: A computer printed circuit board for a cargo communications console.
+  components:
+    - type: Sprite
+      state: cpu_supply
+    - type: ComputerBoard
+      prototype: ComputerCommsITG

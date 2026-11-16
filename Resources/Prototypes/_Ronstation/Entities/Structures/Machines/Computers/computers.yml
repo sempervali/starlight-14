@@ -1,0 +1,97 @@
+# ITG/Salv comms console
+- type: entity
+  parent: ComputerComms
+  id: ComputerCommsSalvage
+  name: salvage communications console
+  description: A simplified computer used to make station wide announcements via keyboard.
+  components:
+    - type: Sprite
+      layers:
+        - map: ["computerLayerBody"]
+          state: computer
+        - map: ["computerLayerKeyboard"]
+          state: generic_keyboard
+        - map: ["computerLayerScreen"]
+          state: comm-salv
+          sprite: _Ronstation/Structures/Machines/computers.rsi
+        - map: ["computerLayerKeys"]
+          state: generic_keys
+        - map: [ "enum.WiresVisualLayers.MaintenancePanel" ]
+          state: generic_panel_open
+    - type: AccessReader
+      access: [[ "SalvageLead" ]]
+    - type: CommunicationsConsole
+      title: comms-console-announcement-title-salvage
+      sound: /Audio/_Starlight/Announcements/announce2.ogg
+      color: "#8D1C99"
+      settableAlertLevels: []
+      canBroadcast: false
+      canShuttle: false
+    - type: SecureCommandTerminalConsole
+      enabled: false
+    - type: Computer
+      board: SalvageCommsComputerCircuitboard
+    - type: PointLight
+      radius: 2.5
+      energy: 1.5
+      color: "#8D1C99"
+
+- type: entity
+  parent: ComputerComms
+  id: ComputerCommsITG
+  suffix: Admeme, DO NOT MAP
+  name: trade guild communications console
+  description: A simplified computer used to make station wide announcements via keyboard.
+  components:
+    - type: Sprite
+      layers:
+        - map: ["computerLayerBody"]
+          state: computer
+        - map: ["computerLayerKeyboard"]
+          state: generic_keyboard
+        - map: ["computerLayerScreen"]
+          state: comm-sup
+          sprite: _Starlight/Structures/Machines/computers.rsi
+        - map: ["computerLayerKeys"]
+          state: generic_keys
+        - map: [ "enum.WiresVisualLayers.MaintenancePanel" ]
+          state: generic_panel_open
+    - type: AccessReader
+      access: [[ "SalvageLead" ]] # TODO: Replace with dedicated ITG access if one is added.
+    - type: CommunicationsConsole
+      title: comms-console-announcement-title-sup
+      sound: /Audio/_Starlight/Announcements/announce2.ogg
+      color: "#b48b57"
+      settableAlertLevels: []
+      canBroadcast: false
+      canShuttle: false
+    - type: SecureCommandTerminalConsole
+      enabled: false
+    - type: Computer
+      board: CargoCommsComputerCircuitboard
+    - type: PointLight
+      radius: 2.5
+      energy: 1.5
+      color: "#b48b57"
+
+# Filled varients
+
+- type: entity
+  parent: ComputerCommsSalvage
+  id: ComputerCommsSalvageFilled
+  suffix: Filled, Map on ATS
+  components:
+    - type: ItemSlots
+      slots:
+        cell_slot:
+          startingItem: PowerCellHigh
+
+- type: entity
+  parent: ComputerCommsITG
+  id: ComputerCommsITGFilled
+  suffix: Filled, Admeme, DO NOT MAP
+  components:
+    - type: ItemSlots
+      slots:
+        cell_slot:
+          startingItem: PowerCellHigh
