@@ -25,7 +25,7 @@
     - id: CentCommCommunicationTablet
     - id: HolofanProjectorRecharging
     - id: HoloprojectorEngineeringRecharging
-    - id: DoorRemoteCustom
+    - id: DoorRemoteCustomCC
     - id: MedkitCombatFilled
 # Filled modsuit for ERT leader admeme, 12 gauge speedloaders
 - type: entity
@@ -55,7 +55,7 @@
     - id: BodyBagCCFolded
     - id: BodyBagCCFolded
     - id: CentCommCommunicationTablet
-    - id: DoorRemoteCustom
+    - id: DoorRemoteCustomCC
     - id: MedkitCombatFilled
 # Filled modsuit for ERT leader admeme, XL8/Lecter mags
 - type: entity
@@ -85,7 +85,7 @@
       - id: BodyBagCCFolded
       - id: BodyBagCCFolded
       - id: CentCommCommunicationTablet
-      - id: DoorRemoteCustom
+      - id: DoorRemoteCustomCC
       - id: MedkitCombatFilled
 # Written by Semper based off of Atakku's original code, further modified from contribution to Ronstation
 # This explicitly now targets a role as CC Security division
@@ -108,7 +108,7 @@
       - id: RCDExperimental
       - id: RPDExperimental
       - id: RPLDExperimental
-      - id: DoorRemoteCustom
+      - id: DoorRemoteCustomCC
       - id: BoxSurvivalNonBreatherExtended
       - id: HoloprojectorSecurityRecharging
       - id: TSFBatonModel5 # Anti-Tider Baton.
@@ -132,3 +132,29 @@
       - id: ClothingMaskGasCCSD # To go with the hardsuit. Explicitly doesn't block NV because gas masks with flash protection either always block NV, or stop blocking NV when you've flipped it up and down. (blame the ss14 spaghetti code)
       - id: CentCommCommunicationTablet
       - id: MedkitCombatFilled
+# Greenshield Officer; ultravet reward
+- type: entity
+  id: ClothingBackpackHoldingGreenshieldFilled # This is everything upstream's greenshield role starts with, including in pockets and on back. Anyone taking this is expected to only perform the role *of* a greenshield officer; protecting/guarding other CCOs in the presence of station crew. Its ultra-vet locked for a reason, people putting in that much time would actually give a shit.
+  name: "greenshield starter kit"
+  description: "A starter kit of all equipment normally issued to Greenshield officers, besides the suit, PDA, or belt itself."
+  parent: ClothingBackpackHoldingBaseCCFill
+  suffix: Filled
+  categories: [ DoNotMap ]
+  components:
+    - type: ChameleonClothing
+      slot: [back]
+      default: ClothingBackpackGreenshield
+    - type: StorageFill
+      contents:
+      - id: MagazinePistolSubMachineGunTopMounted
+      - id: MagazinePistolSubMachineGunTopMounted
+      - id: MagazinePistolSubMachineGunTopMounted
+      - id: WeaponSubMachineGunWt550g
+      - id: WeaponEnergyMagnumGunGreenshield
+      - id: GreenLightShield
+      - id: JawsOfLifeMed
+      - id: DefibrillatorCompact
+      - id: TearGasGrenade
+      - id: SmokeGrenade
+      - id: GrenadeFlashBang
+      - id: DrinkMREFlask

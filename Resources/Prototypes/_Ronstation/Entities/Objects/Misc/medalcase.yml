@@ -1,0 +1,38 @@
+- type: entity
+  id: MedalCaseCC # Reason: Saw CC specific medals. We could probably map this in a CC office area.
+  name: centcomm medal case
+  description: Case with medals. Has a few extra for members of Central to bestow upon those who they deem worthy.
+  parent: [ BaseStorageItem, BaseBagOpenClose, BaseCommandContraband ]
+  components:
+  - type: Sprite
+    sprite: Objects/Storage/medalcase.rsi
+    layers:
+    - state: closed
+      map: ["closeLayer"]
+    - state: open
+      map: ["openLayer"]
+  - type: Appearance
+  - type: Item
+    sprite: Objects/Storage/medalcase.rsi
+    size: Normal
+  - type: Storage
+    grid:
+    - 0,0,10,1
+    whitelist:
+      tags:
+        - Medal
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:AllSelector
+        children:
+        - id: ClothingNeckGoldmedal
+        - id: ClothingNeckBronzeheart
+        - id: ClothingNeckCargomedal
+        - id: ClothingNeckEngineermedal
+        - id: ClothingNeckMedicalmedal
+        - id: ClothingNeckSciencemedal
+        - id: ClothingNeckSecuritymedal
+        - id: ClothingNeckClownmedal
+        - id: ClothingNeckCentralCommandMedal
+        - id: ClothingNeckCentralCommandMedalValor
+        - id: ClothingNeckCentralCommandMedalGaudy

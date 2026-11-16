@@ -6,7 +6,7 @@
   - type: Pda
     id: CentcomIDCardDivision
 - type: entity
-  parent: CentcomCollarPDA
+  parent: CentCommGreenShieldCollarPDA # Reparented to the greenshield collar since this has a custom sprite that fits.
   id: CentComDivisionCollarPDA
   name: centcomm collar
   description: Light green sign of man's best friend.

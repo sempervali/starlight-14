@@ -41,7 +41,7 @@
     jumpsuit: ClothingUniformJumpskirtCentcommSecurityFormalWear
     back: ClothingBackpackHoldingCentcomOfficerFilled
     shoes: ClothingShoesBootsMagJack
-    head: ClothingHeadHatCentcomcap
+    head: ClothingHeadHatCapCentcommCSD
     mask: ClothingMaskGasCentcom
     neck: ClothingNeckCloakCCSDFireline
     outerClothing: ClothingOuterArmorCentcommCarapace

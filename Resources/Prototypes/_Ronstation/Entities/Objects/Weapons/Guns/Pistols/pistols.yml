@@ -2,8 +2,12 @@
   name: firebird handcannon
   parent: [BaseCentcommContraband, WeaponPistolDeagle]
   id: WeaponPistolDeagle50
-  description: A high-caliber handgun designed for both insulting and putting down Syndicate bastards. Unlike the Syndicate's current varient, this one is chambered in the Phoenix's Calliber; .50 magnum.
+  description: A high-caliber handgun designed for both insulting and putting down Syndicate bastards. Unlike the Syndicate's current varient, this one is chambered in the Phoenix's Calliber; .50 magnum. Outfitted with automatic ejection tech.
   components:
+  - type: ChamberMagazineAmmoProvider
+    autoEject: true
+    soundAutoEject:
+      path: /Audio/_Ronstation/Weapons/Guns/EmptyAlarm/nt_empty_alarm.ogg
   - type: ItemSlots
     slots:
       gun_magazine:

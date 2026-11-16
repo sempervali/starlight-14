@@ -1,0 +1,16 @@
+- type: entity
+  parent: [DoorRemoteCanEletrifyDoors, BaseCentcommContraband] # CC contra because normal players shouldn't have this
+  id: DoorRemoteCustomCC
+  name: centcomm door remote # The reason for making this: its slightly better than the original custom remote but doesn't grant AA on its own.
+  description: A gadget which can open and bolt doors remotely. This advanced variant does not have built-in access, instead inheriting the ID access of the user. It bears the CentComm signature green stripes, and can enable or disable electrification of doors.
+  components:
+  - type: Sprite
+    layers:
+    - state: door_remotebase
+    - state: door_remotelightscolour
+      color: "#40d133"
+    - state: door_remotescreencolour
+      color: "#20e510"
+  - type: Access
+  - type: DoorRemote
+    includeUserAccess: true

@@ -30,16 +30,17 @@
     #eyes: ClothingEyesGlassesCentComm
     # gloves: ClothingHandsGlovesColorBlack Ronstation: Replaced by the selectable gloves category
     #outerClothing: ClothingOuterArmorCentcommCarapace
-    id: CentCommDivisionPDA #Ronstation: Custom PDA/ID for CC Officials to change their information for in-character purposes
+    id: CentComDivisionPDA #Ronstation: Custom PDA/ID for CC Officials to change their information for in-character purposes
     ears: ClothingHeadsetAltCentComDivHead #Ronstation: Actually use the CC headset with admeme-safe components, keys you can't remove since there should only be so many master keys in a round for objectives.
     #belt: WeaponPistolN1984
-    pocket1: BoxFolderCentComClipboardThreePapers
-    pocket2: Centcommteleportdoohickey # Phoenix/Ronstation - For them to get to CC if they latejoin. (For whatever reason, having it inhand was not working at all)
+    #pocket1:
+    #pocket2:
   storage:
     back:
-    - DoorRemoteCustom
+    - DoorRemoteCustomCC # Ronstation: More CC tweaks
     - GreenPhone
-    - RubberStampCentcom
+    - Centcommteleportdoohickey # Phoenix/Ronstation - For them to get to CC if they latejoin. Moved to bag to help prevent loadout issues
+    - BoxFolderCentComClipboardThreePapers
     - DoubleEmergencyNitrogenTankFilled # For some reason CCOs don't spawn with a survival box, but there's no box with double tanks anyways. Only the best for CentComm...
     - DoubleEmergencyOxygenTankFilled
     - BoxSurvivalNonBreatherExtended # Double rations for CCOs.

@@ -1,5 +1,31 @@
+- type: loadoutEffectGroup
+  id: AquaintedCCO # You've been a member of CC for a good bit. A minor promotion with more trinkets to enjoy. Keep up the good work for more goodies.
+  effects:
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:RoleTimeRequirement
+      role: JobCentralCommandOfficial
+      time: 10h
+- type: loadoutEffectGroup
+  id: VeteranCCO # You've been a member of CC for a good while. We trust you to use our more expensive equipment responsibly.
+  effects:
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:RoleTimeRequirement
+      role: JobCentralCommandOfficial
+      time: 30h
+- type: loadoutEffectGroup
+  id: UltraVetCCO # By now, you've likely made a name for yourself in Central; you are granted equipment only trusted with the absolute best of the best. Make us proud.
+  effects:
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:RoleTimeRequirement
+      role: JobCentralCommandOfficial
+      time: 30h
+
 - type: roleLoadout
   id: JobCentralCommandOfficial
+  canCustomizeName: true # Ronstation: Allowing ERT larp, among other things; Lets people have titles like Officer, Commander, or similar.
   groups:
     - CCOeyes
     - CCOhead
@@ -21,27 +47,199 @@
   minLimit: 0
   maxLimit: 1
   name: CCO-Head-Group
-  loadouts:
+  loadouts: # Ronstation begin: Adding new upstream CentComm content
+    - CCOCCBeret
     - CCObrandhat
     - CCOCCCap
-    - CCOCCBeret
+    - CCOCADBeret
+    - CCOCADBounty
+    - CCOCADCap
+    - CCOCCDBeret
+    - CCOCCDBounty
+    - CCOCCDCap
+    - CCOCEDBeret
+    - CCOCEDBounty
+    - CCOCEDCap
+    - CCOCIDBeret
+    - CCOCIDBounty
+    - CCOCIDCap
+    - CCOCMDBeret
+    - CCOCMDBounty
+    - CCOCMDCap
+    - CCOCRDBeret
+    - CCOCRDBounty
+    - CCOCRDCap
+    - CCOCSDBeret
+    - CCOCSDBounty
+    - CCOCSDCap
+    - CCOCSODBeret
+    - CCOCSODBounty
+    - CCOCSODCap
+
 
 - type: loadout
   id: CCObrandhat
   equipment:
     head: ClothingHeadHatCentcom
+  groupBy: "cchat"
 
 - type: loadout
   id: CCOCCCap # Holy name.
   equipment:
     head: ClothingHeadHatCentcomcap
+  groupBy: "cchat"
 
 - type: loadout
   id: CCOCCBeret
   equipment:
     head: ClothingHeadHatCCberet
+  groupBy: "cchat"
 
-# Ronstation: Gloves. Now with the option for proper CC colors!
+- type: loadout
+  id: CCOCADBounty
+  equipment:
+    head: ClothingHeadHatBountyCentcommCAD
+  groupBy: "cadhat"
+
+- type: loadout
+  id: CCOCADBeret
+  equipment:
+    head: ClothingHeadHatBeretCentcommCAD
+  groupBy: "cadhat"
+
+- type: loadout
+  id: CCOCADCap
+  equipment:
+    head: ClothingHeadHatCapCentcommCAD
+  groupBy: "cadhat"
+
+- type: loadout
+  id: CCOCCDBounty
+  equipment:
+    head: ClothingHeadHatBountyCentcommCCD
+  groupBy: "ccdhat"
+
+- type: loadout
+  id: CCOCCDBeret
+  equipment:
+    head: ClothingHeadHatBeretCentcommCCD
+  groupBy: "ccdhat"
+
+- type: loadout
+  id: CCOCCDCap
+  equipment:
+    head: ClothingHeadHatCapCentcommCCD
+  groupBy: "ccdhat"
+
+- type: loadout
+  id: CCOCEDBounty
+  equipment:
+    head: ClothingHeadHatBountyCentcommCED
+  groupBy: "cedhat"
+
+- type: loadout
+  id: CCOCEDBeret
+  equipment:
+    head: ClothingHeadHatBeretCentcommCED
+  groupBy: "cedhat"
+
+- type: loadout
+  id: CCOCEDCap
+  equipment:
+    head: ClothingHeadHatCapCentcommCED
+  groupBy: "cedhat"
+
+- type: loadout
+  id: CCOCIDBounty
+  equipment:
+    head: ClothingHeadHatBountyCentcommCID
+  groupBy: "cidhat"
+
+- type: loadout
+  id: CCOCIDBeret
+  equipment:
+    head: ClothingHeadHatBeretCentcommCID
+  groupBy: "cidhat"
+
+- type: loadout
+  id: CCOCIDCap
+  equipment:
+    head: ClothingHeadHatCapCentcommCID
+  groupBy: "cidhat"
+
+- type: loadout
+  id: CCOCMDBounty
+  equipment:
+    head: ClothingHeadHatBountyCentcommCMD
+  groupBy: "cmdhat"
+
+- type: loadout
+  id: CCOCMDBeret
+  equipment:
+    head: ClothingHeadHatBeretCentcommCMD
+  groupBy: "cmdhat"
+
+- type: loadout
+  id: CCOCMDCap
+  equipment:
+    head: ClothingHeadHatCapCentcommCMD
+  groupBy: "cmdhat"
+
+- type: loadout
+  id: CCOCRDBounty
+  equipment:
+    head: ClothingHeadHatBountyCentcommCRD
+  groupBy: "crdhat"
+
+- type: loadout
+  id: CCOCRDBeret
+  equipment:
+    head: ClothingHeadHatBeretCentcommCRD
+  groupBy: "crdhat"
+
+- type: loadout
+  id: CCOCRDCap
+  equipment:
+    head: ClothingHeadHatCapCentcommCRD
+  groupBy: "crdhat"
+
+- type: loadout
+  id: CCOCSDBounty
+  equipment:
+    head: ClothingHeadHatBountyCentcommCSD
+  groupBy: "csdhat"
+
+- type: loadout
+  id: CCOCSDBeret
+  equipment:
+    head: ClothingHeadHatBeretCentcommCSD
+  groupBy: "csdhat"
+
+- type: loadout
+  id: CCOCSDCap
+  equipment:
+    head: ClothingHeadHatCapCentcommCSD
+  groupBy: "csdhat"
+
+- type: loadout
+  id: CCOCSODBounty
+  equipment:
+    head: ClothingHeadHatBountyCentcommCSOD
+  groupBy: "csodhat"
+
+- type: loadout
+  id: CCOCSODBeret
+  equipment:
+    head: ClothingHeadHatBeretCentcommCSOD
+  groupBy: "csodhat"
+
+- type: loadout
+  id: CCOCSODCap
+  equipment:
+    head: ClothingHeadHatCapCentcommCSOD
+  groupBy: "csodhat"
+# Ronstation end: Adding new upstream CentComm content
+# Ronstation begin: Gloves. Now with the option for proper CC colors!
 
 - type: loadoutGroup
   id: CCOgloves
@@ -61,7 +259,7 @@
   id: CCOCCGloves
   equipment:
     gloves: ClothingHandsGlovesCentComm
-
+# Ronstation end: Gloves. Now with the option for proper CC colors!
 # Jumpsuit
 
 - type: loadoutGroup
@@ -69,86 +267,337 @@
   minLimit: 1
   maxLimit: 1
   name: CCO-Suit-Group
-  loadouts:
-    - CCOjumpsuit
-    - CCOjumpskirt
+  loadouts: # Ronstation begin: Adding new upstream CentComm content
     - CCOformalsuit
     - CCOformaldress
-    - CCOformaldomestic
-    - CCOformalengineering
-    - CCOformalintelligence
-    - CCOformalcargo
+    - CCOjumpsuit
+    - CCOjumpskirt
+    - CCOPencilSkirt
+    - CCOTurtleneckSkirt
+    - CCOCADSuit
+    - CCOCADSkirt
+    - CCOCADDressSuit
+    - CCOCADDressSkirt
     - CCOformaladministrative
+    - CCOCCDSuit
+    - CCOCCDSkirt
+    - CCOCCDDressSuit
+    - CCOCCDDressSkirt
+    - CCOformalcargo
+    - CCOformaldomestic
+    - CCOCEDSuit
+    - CCOCEDSkirt
+    - CCOCEDDressSuit
+    - CCOCEDDressSkirt
+    - CCOformalengineering
+    - CCOCIDSuit
+    - CCOCIDSkirt
+    - CCOCIDDressSuit
+    - CCOCIDDressSkirt
+    - CCOformalintelligence
+    - CCOCMDSuit
+    - CCOCMDSkirt
+    - CCOCMDDressSuit
+    - CCOCMDDressSkirt
     - CCOformalmedical
+    - CCOCRDSuit
+    - CCOCRDSkirt
+    - CCOCRDDressSuit
+    - CCOCRDDressSkirt
     - CCOformalresearch
+    - CCOCSDSuit
+    - CCOCSDSkirt
+    - CCOCSDDressSuit
+    - CCOCSDDressSkirt
     - CCOformalsecurity
+    - CCOCSODSuit
+    - CCOCSODSkirt
+    - CCOCSODDressSuit
+    - CCOCSODDressSkirt
     - CCOformalspecops
-
-- type: loadout
-  id: CCOjumpsuit
-  equipment:
-    jumpsuit: ClothingAltUniformJumpsuitCentcomOfficial
-
-- type: loadout
-  id: CCOjumpskirt
-  equipment:
-    jumpsuit: ClothingUniformJumpskirtCentcomOfficial
 
 - type: loadout
   id: CCOformalsuit
   equipment:
     jumpsuit: ClothingUniformJumpsuitCentcomFormal
+  groupBy: "ccsuit"
 
 - type: loadout
   id: CCOformaldress
   equipment:
     jumpsuit: ClothingUniformJumpskirtCentcomFormalDress
+  groupBy: "ccsuit"
 
 - type: loadout
-  id: CCOformaldomestic
+  id: CCOjumpsuit
   equipment:
-    jumpsuit: ClothingUniformJumpskirtCentcommDomesticFormalWear
+    jumpsuit: ClothingAltUniformJumpsuitCentcomOfficial
+  groupBy: "ccsuit"
 
 - type: loadout
-  id: CCOformalengineering
+  id: CCOjumpskirt
   equipment:
-    jumpsuit: ClothingUniformJumpskirtEngiCentcommFormalWear
+    jumpsuit: ClothingUniformJumpskirtCentcomOfficial
+  groupBy: "ccsuit"
 
 - type: loadout
-  id: CCOformalintelligence
+  id: CCOPencilSkirt
   equipment:
-    jumpsuit: ClothingUniformJumpskirtCentcommIntelFormalWear
+    jumpsuit: ClothingUniformJumpskirtPencilCentcomOfficial
+  groupBy: "ccsuit"
 
 - type: loadout
-  id: CCOformalcargo
+  id: CCOTurtleneckSkirt
   equipment:
-    jumpsuit: ClothingUniformJumpskirtCentcommCargoFormalWear
+    jumpsuit: ClothingUniformJumpskirtCentcomOfficer
+  groupBy: "ccsuit"
+
+- type: loadout
+  id: CCOCADSuit
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitCentcomFormalCAD
+  groupBy: "cadsuit"
+
+- type: loadout
+  id: CCOCADSkirt
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtCentcomFormalCAD
+  groupBy: "cadsuit"
+
+- type: loadout
+  id: CCOCADDressSuit
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitCentcomFormalDressCAD
+  groupBy: "cadsuit"
+
+- type: loadout
+  id: CCOCADDressSkirt
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtCentcomFormalDressCAD
+  groupBy: "cadsuit"
 
 - type: loadout
   id: CCOformaladministrative
   equipment:
     jumpsuit: ClothingUniformJumpskirtCentcommAdminFormalWear
+  groupBy: "cadsuit"
+
+- type: loadout
+  id: CCOCCDSuit
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitCentcomFormalCCD
+  groupBy: "ccdsuit"
+
+- type: loadout
+  id: CCOCCDSkirt
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtCentcomFormalCCD
+  groupBy: "ccdsuit"
+
+- type: loadout
+  id: CCOCCDDressSuit
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitCentcomFormalDressCCD
+  groupBy: "ccdsuit"
+
+- type: loadout
+  id: CCOCCDDressSkirt
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtCentcomFormalDressCCD
+  groupBy: "ccdsuit"
+
+- type: loadout
+  id: CCOformalcargo
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtCentcommCargoFormalWear
+  groupBy: "ccdsuit"
+
+- type: loadout
+  id: CCOformaldomestic # the one division that got literally nothing with the rest of the content made by upstream. for some reason.
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtCentcommDomesticFormalWear
+  groupBy: "cddsuit"
+
+- type: loadout
+  id: CCOCEDSuit
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitCentcomFormalCED
+  groupBy: "cedsuit"
+
+- type: loadout
+  id: CCOCEDSkirt
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtCentcomFormalCED
+  groupBy: "cedsuit"
+
+- type: loadout
+  id: CCOCEDDressSuit
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitCentcomFormalDressCED
+  groupBy: "cedsuit"
+
+- type: loadout
+  id: CCOCEDDressSkirt
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtCentcomFormalDressCED
+  groupBy: "cedsuit"
+
+- type: loadout
+  id: CCOformalengineering
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtEngiCentcommFormalWear
+  groupBy: "cedsuit"
+
+- type: loadout
+  id: CCOCIDSuit
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitCentcomFormalCID
+  groupBy: "cidsuit"
+
+- type: loadout
+  id: CCOCIDSkirt
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtCentcomFormalCID
+  groupBy: "cidsuit"
+
+- type: loadout
+  id: CCOCIDDressSuit
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitCentcomFormalDressCID
+  groupBy: "cidsuit"
+
+- type: loadout
+  id: CCOCIDDressSkirt
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtCentcomFormalDressCID
+  groupBy: "cidsuit"
+
+- type: loadout
+  id: CCOformalintelligence
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtCentcommIntelFormalWear
+  groupBy: "cidsuit"
+
+- type: loadout
+  id: CCOCMDSuit
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitCentcomFormalCMD
+  groupBy: "ccmdsuit"
+
+- type: loadout
+  id: CCOCMDSkirt
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtCentcomFormalCMD
+  groupBy: "ccmdsuit"
+
+- type: loadout
+  id: CCOCMDDressSuit
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitCentcomFormalDressCMD
+  groupBy: "ccmdsuit"
+
+- type: loadout
+  id: CCOCMDDressSkirt
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtCentcomFormalDressCMD
+  groupBy: "ccmdsuit"
 
 - type: loadout
   id: CCOformalmedical
   equipment:
     jumpsuit: ClothingUniformJumpskirtCentcommMedFormalWear
+  groupBy: "ccmdsuit"
+
+- type: loadout
+  id: CCOCRDSuit
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitCentcomFormalCRD
+  groupBy: "crdsuit"
+
+- type: loadout
+  id: CCOCRDSkirt
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtCentcomFormalCRD
+  groupBy: "crdsuit"
+
+- type: loadout
+  id: CCOCRDDressSuit
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitCentcomFormalDressCRD
+  groupBy: "crdsuit"
+
+- type: loadout
+  id: CCOCRDDressSkirt
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtCentcomFormalDressCRD
+  groupBy: "crdsuit"
 
 - type: loadout
   id: CCOformalresearch
   equipment:
     jumpsuit: ClothingUniformJumpskirtCentcommResearchFormalWear
+  groupBy: "crdsuit"
+
+- type: loadout
+  id: CCOCSDSuit
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitCentcomFormalCSD
+  groupBy: "csdsuit"
+
+- type: loadout
+  id: CCOCSDSkirt
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtCentcomFormalCSD
+  groupBy: "csdsuit"
+
+- type: loadout
+  id: CCOCSDDressSuit
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitCentcomFormalDressCSD
+  groupBy: "csdsuit"
+
+- type: loadout
+  id: CCOCSDDressSkirt
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtCentcomFormalDressCSD
+  groupBy: "csdsuit"
 
 - type: loadout
   id: CCOformalsecurity
   equipment:
     jumpsuit: ClothingUniformJumpskirtCentcommSecurityFormalWear
+  groupBy: "csdsuit"
+
+- type: loadout
+  id: CCOCSODSuit
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitCentcomFormalCSOD
+  groupBy: "csodsuit"
+
+- type: loadout
+  id: CCOCSODSkirt
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtCentcomFormalCSOD
+  groupBy: "csodsuit"
+
+- type: loadout
+  id: CCOCSODDressSuit
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitCentcomFormalDressCSOD
+  groupBy: "csodsuit"
+
+- type: loadout
+  id: CCOCSODDressSkirt
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtCentcomFormalDressCSOD
+  groupBy: "csodsuit"
 
 - type: loadout
   id: CCOformalspecops
   equipment:
     jumpsuit: ClothingUniformJumpskirtCentcommSpecialOpsFormalWear
-
+  groupBy: "csodsuit"
+# Ronstation end: Adding new upstream CentComm content
 # eyes
 
 - type: loadoutGroup
@@ -158,23 +607,47 @@
   name: CCO-Eyes-Group
   loadouts:
     - CCOCCglasses
-    - CCOCCHud
+    - CCODivGlasses
     - CCOCCJamJar
+    - CCOCCHud
+    - CCODivHud
+
 
 - type: loadout
   id: CCOCCglasses
   equipment:
     eyes: ClothingEyesGlassesCentComm
+  groupBy: "ccglasses"
 
 - type: loadout
-  id: CCOCCHud
+  id: CCODivGlasses
+  effects:
+    - !type:GroupLoadoutEffect
+        proto: VeteranCCO
   equipment:
-    eyes: ClothingEyesHudCentComm
+    eyes: ClothingEyesGlassesCCDivHead
+  groupBy: "ccglasses"
 
 - type: loadout
   id: CCOCCJamJar
   equipment:
     eyes: ClothingEyesGlassesJamjarCentComm
+  groupBy: "ccglasses"
+
+- type: loadout
+  id: CCOCCHud
+  equipment:
+    eyes: ClothingEyesHudCentComm
+  groupBy: "cchud"
+
+- type: loadout
+  id: CCODivHud
+  effects:
+    - !type:GroupLoadoutEffect
+        proto: VeteranCCO
+  equipment:
+    eyes: ClothingEyesHudCCDivHead
+  groupBy: "cchud"
 
 #Ronstation: Mask. Multiple choices. Choose wisely.
 
@@ -201,6 +674,7 @@
 
 - type: loadout
   id: CCOSDMask
+
   equipment:
     mask: ClothingMaskGasCCSD
 
@@ -221,12 +695,13 @@
     - CCOOuterArmoredCoat
     - CCOOuterCarapace
     - CCOOuterWebvest
-    - CCOOuterHardsuitLeader
-    - CCOOuterHardsuitEngineer
     - CCOOuterHardsuitJanitor
+    - CCOOuterHardsuitEngineer
     - CCOOuterHardsuitChaplain
     - CCOOuterHardsuitMedical
     - CCOOuterHardsuitSecurity
+    - CCOOuterHardsuitLeader
+    - CCOOuterHardsuitGreenshield
 
 - type: loadout
   id: CCOOuterWinterCoat
@@ -235,6 +710,9 @@
 
 - type: loadout
   id: CCOOuterArmoredCoat
+  effects:
+    - !type:GroupLoadoutEffect
+        proto: AquaintedCCO
   equipment:
     outerClothing: ClothingOuterCoatWardenCentcomm
 
@@ -245,38 +723,74 @@
 
 - type: loadout
   id: CCOOuterWebvest
+  effects:
+    - !type:GroupLoadoutEffect
+        proto: AquaintedCCO
   equipment:
     outerClothing: ClothingOuterVestWebEliteCentcomm
 
 - type: loadout
-  id: CCOOuterHardsuitLeader
+  id: CCOOuterHardsuitJanitor
+  effects:
+    - !type:GroupLoadoutEffect
+        proto: AquaintedCCO
   equipment:
-    outerClothing: ClothingOuterHardsuitERTLeader
+    outerClothing: ClothingOuterHardsuitERTJanitor
+  groupBy: "cchardsuit"
 
 - type: loadout
   id: CCOOuterHardsuitEngineer
+  effects:
+    - !type:GroupLoadoutEffect
+        proto: AquaintedCCO
   equipment:
     outerClothing: ClothingOuterHardsuitERTEngineer
-
-- type: loadout
-  id: CCOOuterHardsuitJanitor
-  equipment:
-    outerClothing: ClothingOuterHardsuitERTJanitor
+  groupBy: "cchardsuit"
 
 - type: loadout
   id: CCOOuterHardsuitChaplain
+  effects:
+    - !type:GroupLoadoutEffect
+        proto: AquaintedCCO
   equipment:
     outerClothing: ClothingOuterHardsuitERTChaplain
+  groupBy: "cchardsuit"
 
 - type: loadout
   id: CCOOuterHardsuitMedical
+  effects:
+    - !type:GroupLoadoutEffect
+        proto: AquaintedCCO
   equipment:
     outerClothing: ClothingOuterHardsuitERTMedical
+  groupBy: "cchardsuit"
 
 - type: loadout
   id: CCOOuterHardsuitSecurity
+  effects:
+    - !type:GroupLoadoutEffect
+        proto: AquaintedCCO
   equipment:
     outerClothing: ClothingOuterHardsuitERTSecurity
+  groupBy: "cchardsuit"
+
+- type: loadout
+  id: CCOOuterHardsuitLeader
+  effects:
+    - !type:GroupLoadoutEffect
+        proto: VeteranCCO
+  equipment:
+    outerClothing: ClothingOuterHardsuitERTLeader
+  groupBy: "cchardsuit"
+
+- type: loadout
+  id: CCOOuterHardsuitGreenshield
+  effects:
+    - !type:GroupLoadoutEffect
+        proto: UltraVetCCO
+  equipment:
+    outerClothing: ClothingOuterHardsuitGreenshield
+  groupBy: "cchardsuit"
 
 # legs
 
@@ -288,6 +802,7 @@
   loadouts:
     - CCOCCJacks
     - CCOCCAdvJack # Ronstation: new boots inspired by frontier
+    - CCOCCGSMagboots
     - CCOCCCombatboots
     - CCOCCHighHeels
     - CCOCCLaceup
@@ -304,8 +819,21 @@
 # Ronstation: new boots inspired by frontier
 - type: loadout
   id: CCOCCAdvJack
+  effects:
+    - !type:GroupLoadoutEffect
+        proto: AquaintedCCO
   equipment:
     shoes: ClothingShoesBootsMagJack
+  groupBy: "ccmagboots"
+
+- type: loadout
+  id: CCOCCGSMagboots
+  effects:
+    - !type:GroupLoadoutEffect
+        proto: AquaintedCCO
+  equipment:
+    shoes: ClothingShoesBootsMagGreenshield
+  groupBy: "ccmagboots"
 # End Ronstation
 - type: loadout
   id: CCOCCHighHeels
@@ -325,36 +853,51 @@
   maxLimit: 1
   name: CCO-Backpack-Group
   loadouts:
+    - CCOSatchelHolding
     - CCOSatchelLeather
     - CCOCCSatchel # These are outclassed by the chameleon varients of bags of holding, but are here for people who want to limit their character.
-    - CCOSatchelHolding
     - CCOBackpackHolding
+    - CCOGSBackpack
     - CCODuffelHolding
 
 - type: loadout
   id: CCOSatchelLeather
   equipment:
     back: ClothingBackpackSatchelLeather
+  groupBy: "ccsatchel"
 
 - type: loadout
   id: CCOCCSatchel
   equipment:
     back: ClothingBackpackSatchelCentcomm
+  groupBy: "ccsatchel"
 
 - type: loadout
   id: CCOSatchelHolding
   equipment:
     back: ClothingBackpackSatchelHoldingCC # Ronstation: Making use of reduced tech debt. Also makes it CentComm contra.
+  groupBy: "ccsatchel"
 
 - type: loadout
   id: CCOBackpackHolding
   equipment:
     back: ClothingBackpackHoldingCC # Ronstation: Making use of reduced tech debt. Also makes it CentComm contra.
+  groupBy: "ccbackpack"
 
 - type: loadout
   id: CCODuffelHolding
   equipment:
     back: ClothingBackpackDuffelHoldingCC # Ronstation: Making use of reduced tech debt. Also makes it CentComm contra.
+  groupBy: "ccduffel"
+
+- type: loadout
+  id: CCOGSBackpack
+  effects:
+    - !type:GroupLoadoutEffect
+        proto: UltraVetCCO
+  equipment:
+    back: ClothingBackpackHoldingGreenshieldFilled
+  groupBy: "ccbackpack"
 
 # Sidearm/extra
 
@@ -369,6 +912,7 @@
     - CCON1984
     - CCOCetoolbelt
     - CCOVibroblade
+    - CCOGSMB
 
 - type: loadout
   id: CCOMateba
@@ -382,8 +926,18 @@
 # Ronstation: adding the 50 magnum deagle as a fill because why not
 - type: loadout
   id: CCOFBHC
+  effects:
+    - !type:GroupLoadoutEffect
+        proto: VeteranCCO
   equipment:
     belt: ClothingBeltHolsterFilledDeagle
+- type: loadout
+  id: CCOGSMB
+  effects:
+    - !type:GroupLoadoutEffect
+        proto: UltraVetCCO
+  equipment:
+    belt: ClothingBeltGreenshieldFilled
 # End Ronstation
 - type: loadout
   id: CCOCetoolbelt
@@ -463,7 +1017,7 @@
 - type: loadoutGroup
   id: CCOTRINKETS
   minLimit: 0
-  maxLimit: 2
+  maxLimit: 6 # Ronstation: Adding more trinkets, playtime rewards for some.
   name: CCO-Trinket-Group
   loadouts:
     - CCOTrinketAdminStampsBox
@@ -477,6 +1031,8 @@
     - CCOTrinketStampSecurity
     - CCOTrinketStampSpecOps
     - CCOTrinketRenaultPlush
+    - CCOTrinketSuperSynth
+    - CCOTrinketMedalCase
 
 - type: loadout
   id: CCOTrinketAdminStampsBox
@@ -489,57 +1045,88 @@
   storage:
     back:
     - RubberStampCDD
+  groupBy: "divstamp"
 
 - type: loadout
   id: CCOTrinketStampEngineering
   storage:
     back:
     - RubberStampCED
+  groupBy: "divstamp"
 
 - type: loadout
   id: CCOTrinketStampIntelligence
   storage:
     back:
     - RubberStampCID
+  groupBy: "divstamp"
 
 - type: loadout
   id: CCOTrinketStampCargo
   storage:
     back:
     - RubberStampCCD
+  groupBy: "divstamp"
 
 - type: loadout
   id: CCOTrinketStampAdminstrative
   storage:
     back:
     - RubberStampCAD
+  groupBy: "divstamp"
 
 - type: loadout
   id: CCOTrinketStampMedical
   storage:
     back:
     - RubberStampCMD
+  groupBy: "divstamp"
 
 - type: loadout
   id: CCOTrinketStampResearch
   storage:
     back:
     - RubberStampCRD
+  groupBy: "divstamp"
 
 - type: loadout
   id: CCOTrinketStampSecurity
   storage:
     back:
     - RubberStampCSD
+  groupBy: "divstamp"
 
 - type: loadout
   id: CCOTrinketStampSpecOps
   storage:
     back:
     - RubberStampCSOD
+  groupBy: "divstamp"
 
 - type: loadout
   id: CCOTrinketRenaultPlush
+  effects:
+    - !type:GroupLoadoutEffect
+        proto: AquaintedCCO
   storage:
     back:
     - PlushieRenault
+
+- type: loadout
+  id: CCOTrinketSuperSynth
+  effects:
+    - !type:GroupLoadoutEffect
+        proto: AquaintedCCO
+  storage:
+    back:
+    - SuperSynthesizerInstrument
+
+- type: loadout
+  id: CCOTrinketMedalCase
+  effects:
+    - !type:GroupLoadoutEffect
+        proto: VeteranCCO
+  storage:
+    back:
+    - MedalCaseCC
+

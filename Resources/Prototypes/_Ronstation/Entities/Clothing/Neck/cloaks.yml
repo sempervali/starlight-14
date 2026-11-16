@@ -12,7 +12,8 @@
     sprite: _Ronstation/Clothing/Neck/Cloaks/ccsechead_poncho.rsi
   - type: PointLight
     radius: 2
-    energy: 2.2
+    energy: 0.5 # Because even minor light fucks with shadekin NV.
+    falloff: 0.1 # This basically gets the old effect without disabling NV
     color: "#DE3A3A"
   - type: StaticPrice
     price: 2000
