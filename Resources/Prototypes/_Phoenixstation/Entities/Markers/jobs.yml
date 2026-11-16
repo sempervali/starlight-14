@@ -10,5 +10,5 @@
       sprite: _Starlight/Markers/jobs.rsi
       layers:
         - state: green
-        - sprite: _Starlight/Mobs/Pets/k9.rsi
-          state: k9-brown
+        - state: ntrep
+        - state: jobicon

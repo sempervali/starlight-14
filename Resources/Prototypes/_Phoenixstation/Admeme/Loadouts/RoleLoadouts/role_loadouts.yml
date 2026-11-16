@@ -1,0 +1,16 @@
+- type: roleLoadout
+  id: JobCentralCommandOfficial
+  canCustomizeName: true # Ronstation: Allowing ERT larp, among other things; Lets people have titles like Officer, Commander, or similar.
+  groups:
+    - CCOeyes
+    - CCOhead
+    - CCOmask
+    - CCOsuit
+    - CCOgloves # Ronstation: Custom gloves, including actual CC gloves.
+    - CCOOuterClothing
+    - CCOlegs
+    - CCObackpack
+    - CCOextra
+    - CCONeck
+    - CCOTRINKETS
+    - Trinkets

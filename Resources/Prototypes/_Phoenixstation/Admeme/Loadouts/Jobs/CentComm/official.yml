@@ -21,61 +21,9 @@
     requirement:
       !type:RoleTimeRequirement
       role: JobCentralCommandOfficial
-      time: 30h
-
-- type: roleLoadout
-  id: JobCentralCommandOfficial
-  canCustomizeName: true # Ronstation: Allowing ERT larp, among other things; Lets people have titles like Officer, Commander, or similar.
-  groups:
-    - CCOeyes
-    - CCOhead
-    - CCOmask
-    - CCOsuit
-    - CCOgloves # Ronstation: Custom gloves, including actual CC gloves.
-    - CCOOuterClothing
-    - CCOlegs
-    - CCObackpack
-    - CCOextra
-    - CCONeck
-    - CCOTRINKETS
-    - Trinkets
+      time: 60h
 
 # Head
-
-- type: loadoutGroup
-  id: CCOhead
-  minLimit: 0
-  maxLimit: 1
-  name: CCO-Head-Group
-  loadouts: # Ronstation begin: Adding new upstream CentComm content
-    - CCOCCBeret
-    - CCObrandhat
-    - CCOCCCap
-    - CCOCADBeret
-    - CCOCADBounty
-    - CCOCADCap
-    - CCOCCDBeret
-    - CCOCCDBounty
-    - CCOCCDCap
-    - CCOCEDBeret
-    - CCOCEDBounty
-    - CCOCEDCap
-    - CCOCIDBeret
-    - CCOCIDBounty
-    - CCOCIDCap
-    - CCOCMDBeret
-    - CCOCMDBounty
-    - CCOCMDCap
-    - CCOCRDBeret
-    - CCOCRDBounty
-    - CCOCRDCap
-    - CCOCSDBeret
-    - CCOCSDBounty
-    - CCOCSDCap
-    - CCOCSODBeret
-    - CCOCSODBounty
-    - CCOCSODCap
-
 
 - type: loadout
   id: CCObrandhat
@@ -238,83 +186,15 @@
   equipment:
     head: ClothingHeadHatCapCentcommCSOD
   groupBy: "csodhat"
-# Ronstation end: Adding new upstream CentComm content
-# Ronstation begin: Gloves. Now with the option for proper CC colors!
 
-- type: loadoutGroup
-  id: CCOgloves
-  minLimit: 0
-  maxLimit: 1
-  name: CCO-Gloves-Group
-  loadouts:
-    - CCOCCGloves
-    - InsulsCaptain # If you would rather still have the blue trim.
-    - InsulsRegular # Uses upstream glove defintions instead of remaking them.
-    - InsulsCombat
-    - InsulsMercenary
-    - InsulsMaid
-    - InsulsScrapper
+# Hands
 
 - type: loadout
   id: CCOCCGloves
   equipment:
     gloves: ClothingHandsGlovesCentComm
-# Ronstation end: Gloves. Now with the option for proper CC colors!
-# Jumpsuit
 
-- type: loadoutGroup
-  id: CCOsuit
-  minLimit: 1
-  maxLimit: 1
-  name: CCO-Suit-Group
-  loadouts: # Ronstation begin: Adding new upstream CentComm content
-    - CCOformalsuit
-    - CCOformaldress
-    - CCOjumpsuit
-    - CCOjumpskirt
-    - CCOPencilSkirt
-    - CCOTurtleneckSkirt
-    - CCOCADSuit
-    - CCOCADSkirt
-    - CCOCADDressSuit
-    - CCOCADDressSkirt
-    - CCOformaladministrative
-    - CCOCCDSuit
-    - CCOCCDSkirt
-    - CCOCCDDressSuit
-    - CCOCCDDressSkirt
-    - CCOformalcargo
-    - CCOformaldomestic
-    - CCOCEDSuit
-    - CCOCEDSkirt
-    - CCOCEDDressSuit
-    - CCOCEDDressSkirt
-    - CCOformalengineering
-    - CCOCIDSuit
-    - CCOCIDSkirt
-    - CCOCIDDressSuit
-    - CCOCIDDressSkirt
-    - CCOformalintelligence
-    - CCOCMDSuit
-    - CCOCMDSkirt
-    - CCOCMDDressSuit
-    - CCOCMDDressSkirt
-    - CCOformalmedical
-    - CCOCRDSuit
-    - CCOCRDSkirt
-    - CCOCRDDressSuit
-    - CCOCRDDressSkirt
-    - CCOformalresearch
-    - CCOCSDSuit
-    - CCOCSDSkirt
-    - CCOCSDDressSuit
-    - CCOCSDDressSkirt
-    - CCOformalsecurity
-    - CCOCSODSuit
-    - CCOCSODSkirt
-    - CCOCSODDressSuit
-    - CCOCSODDressSkirt
-    - CCOformalspecops
+# Suit
 
 - type: loadout
   id: CCOformalsuit
@@ -597,21 +477,8 @@
   equipment:
     jumpsuit: ClothingUniformJumpskirtCentcommSpecialOpsFormalWear
   groupBy: "csodsuit"
-# Ronstation end: Adding new upstream CentComm content
-# eyes
 
-- type: loadoutGroup
-  id: CCOeyes
-  minLimit: 0
-  maxLimit: 1
-  name: CCO-Eyes-Group
-  loadouts:
-    - CCOCCglasses
-    - CCODivGlasses
-    - CCOCCJamJar
-    - CCOCCHud
-    - CCODivHud
-
+# Eyes
 
 - type: loadout
   id: CCOCCglasses
@@ -649,18 +516,7 @@
     eyes: ClothingEyesHudCCDivHead
   groupBy: "cchud"
 
-#Ronstation: Mask. Multiple choices. Choose wisely.
-
-- type: loadoutGroup
-  id: CCOmask
-  minLimit: 1
-  maxLimit: 1
-  name: CCO-Mask-Group
-  loadouts:
-    - CCOCCmask
-    - CCOERTMask
-    - CCOSDMask
-    - CCOWeldingMask
+# Mask
 
 - type: loadout
   id: CCOCCmask
@@ -683,25 +539,7 @@
   equipment:
     mask: ClothingMaskWeldingGas
 
-#Outer clothing, What probably should have been, now actually existing!
-
-- type: loadoutGroup
-  id: CCOOuterClothing
-  minLimit: 0
-  maxLimit: 1
-  name: CCO-Outer-Group
-  loadouts:
-    - CCOOuterWinterCoat
-    - CCOOuterArmoredCoat
-    - CCOOuterCarapace
-    - CCOOuterWebvest
-    - CCOOuterHardsuitJanitor
-    - CCOOuterHardsuitEngineer
-    - CCOOuterHardsuitChaplain
-    - CCOOuterHardsuitMedical
-    - CCOOuterHardsuitSecurity
-    - CCOOuterHardsuitLeader
-    - CCOOuterHardsuitGreenshield
+# Outer clothing
 
 - type: loadout
   id: CCOOuterWinterCoat
@@ -792,20 +630,7 @@
     outerClothing: ClothingOuterHardsuitGreenshield
   groupBy: "cchardsuit"
 
-# legs
-
-- type: loadoutGroup
-  id: CCOlegs
-  minLimit: 1
-  maxLimit: 1
-  name: CCO-Legs-Group
-  loadouts:
-    - CCOCCJacks
-    - CCOCCAdvJack # Ronstation: new boots inspired by frontier
-    - CCOCCGSMagboots
-    - CCOCCCombatboots
-    - CCOCCHighHeels
-    - CCOCCLaceup
+# Shoes
 
 - type: loadout
   id: CCOCCJacks
@@ -845,20 +670,7 @@
   equipment:
     shoes: ClothingShoesBootsLaceup
 
-# Backpack
-
-- type: loadoutGroup
-  id: CCObackpack
-  minLimit: 1
-  maxLimit: 1
-  name: CCO-Backpack-Group
-  loadouts:
-    - CCOSatchelHolding
-    - CCOSatchelLeather
-    - CCOCCSatchel # These are outclassed by the chameleon varients of bags of holding, but are here for people who want to limit their character.
-    - CCOBackpackHolding
-    - CCOGSBackpack
-    - CCODuffelHolding
+# Back
 
 - type: loadout
   id: CCOSatchelLeather
@@ -899,20 +711,7 @@
     back: ClothingBackpackHoldingGreenshieldFilled
   groupBy: "ccbackpack"
 
-# Sidearm/extra
-
-- type: loadoutGroup
-  id: CCOextra
-  minLimit: 0
-  maxLimit: 1
-  name: CCO-Sidearm-Group
-  loadouts:
-    - CCOMateba
-    - CCOFBHC # Ronstation: adding the 50 magnum deagle as a fill because why not
-    - CCON1984
-    - CCOCetoolbelt
-    - CCOVibroblade
-    - CCOGSMB
+# Belt
 
 - type: loadout
   id: CCOMateba
@@ -949,23 +748,7 @@
   equipment:
     belt: CentcommVibrobladeSheathFilled
 
-# Cloaks/neck
-
-- type: loadoutGroup
-  id: CCONeck
-  minLimit: 0
-  maxLimit: 1
-  name: CCO-Neck-Group
-  loadouts:
-    - CCOCCommandercloak
-    - CCOBoatCloak
-    - CCOCCPoncho
-    - CCOERTLeadMantle
-    - CCOCCAdmiralCloak
-    - CCOCEDMantle
-    - CCOCMDMantle
-    - CCOCRDMantle
-    - CCOSpecOffCloak
+# Neck
 
 - type: loadout
   id: CCOCCommandercloak
@@ -1012,27 +795,7 @@
   equipment:
     neck: ClothingNeckCloakCentcomBlack
 
-# stamps/trinkets (I LOVE GIVING TRINKETS TO MY CCOs AND COMMAND MEMBERS)
-
-- type: loadoutGroup
-  id: CCOTRINKETS
-  minLimit: 0
-  maxLimit: 6 # Ronstation: Adding more trinkets, playtime rewards for some.
-  name: CCO-Trinket-Group
-  loadouts:
-    - CCOTrinketAdminStampsBox
-    - CCOTrinketStampDomestic
-    - CCOTrinketStampEngineering
-    - CCOTrinketStampIntelligence
-    - CCOTrinketStampCargo
-    - CCOTrinketStampAdminstrative
-    - CCOTrinketStampMedical
-    - CCOTrinketStampResearch
-    - CCOTrinketStampSecurity
-    - CCOTrinketStampSpecOps
-    - CCOTrinketRenaultPlush
-    - CCOTrinketSuperSynth
-    - CCOTrinketMedalCase
+# Trinkets
 
 - type: loadout
   id: CCOTrinketAdminStampsBox
@@ -1129,4 +892,3 @@
   storage:
     back:
     - MedalCaseCC
-
