@@ -1,0 +1,17 @@
+- type: entity
+  parent: AirlockSalvage
+  id: AirlockSalvLeadLocked
+  suffix: Salvage Lead, Locked
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsSalvLead ]
+
+- type: entity
+  parent: AirlockSalvageGlass
+  id: AirlockSalvLeadGlassLocked
+  suffix: Salvage Lead, Locked
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsSalvLead ]
