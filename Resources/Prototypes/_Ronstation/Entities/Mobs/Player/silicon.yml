@@ -1,0 +1,55 @@
+# CC AI: Intended just to allow CC SAI admemes if/when desired
+- type: entity
+  id: CCAiHeld
+  parent: AiHeld
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: IntrinsicRadioTransmitter
+    channels:
+    - Binary
+    - Common
+    - Command
+    - Engineering
+    - Medical
+    - Science
+    - Security
+    - Service
+    - Supply
+    - Law
+    - NanoTrasen
+    - CentComm
+  - type: ActiveRadio
+    channels:
+    - Binary
+    - Common
+    - Command
+    - Engineering
+    - Medical
+    - Science
+    - Security
+    - Service
+    - Supply
+    - Law
+    - NanoTrasen
+    - CentComm
+  - type: UserInterface
+    interfaces:
+      enum.RadarConsoleUiKey.Key:
+        type: RadarConsoleBoundUserInterface
+      enum.SiliconLawsUiKey.Key:
+        type: SiliconLawBoundUserInterface
+  - type: IntrinsicUI
+    uis:
+      enum.RadarConsoleUiKey.Key:
+        toggleAction: ActionAGhostShowRadar
+  - type: ShowMindShieldIcons
+
+- type: entity
+  id: CCStationAi
+  parent: PlayerStationAiEmpty
+  name: CentComm AI core
+  suffix: Admeme, DO NOT MAP
+  components:
+  - type: ContainerComp
+    proto: CCAiHeld
+    container: station_ai_mind_slot
