@@ -5,6 +5,7 @@
   components:
   - type: Pda
     id: CentcomIDCardDivision
+
 - type: entity
   parent: CentCommGreenShieldCollarPDA # Reparented to the greenshield collar since this has a custom sprite that fits.
   id: CentComDivisionCollarPDA
@@ -14,13 +15,3 @@
   components:
   - type: Pda
     id: CCK9IDCard
-  - type: RemovePreinstalledPrograms # Needs to be specified; copied the modified program list from the CC PDA and referenced this component from the collar base.
-    programs:
-    - CrewManifestCartridge
-    - NanoTaskCartridge
-    - NewsReaderCartridge
-    - MedTekCartridge
-    - WantedListCartridge
-    - LogProbeCartridge
-    - AstroNavCartridge
-    - NanoChatCartridge

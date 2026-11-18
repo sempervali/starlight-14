@@ -549,3 +549,61 @@
     job: CentralCommandK9
   - type: NanoChatCard # CD
     listNumber: false
+
+# AI id cards; no access, just for desktop computers. Its a roundabout method for allowing AIs to use Nanochat, but given what a Station AI is, it makes no sense for them to have no way to use a program...
+
+- type: entity
+  parent: [ StationAiIDCard, BaseCentcommContraband ]
+  id: CCAIIDcardUnremovable
+  name: CentComm Station AI ID
+  description: An ID card for a CentComm-focused Station AI core. No access, just allows the usage of Nanochat.
+  components:
+  - type: Sprite
+    sprite: _Starlight/Objects/Misc/id_cards.rsi
+    layers:
+    - state: centcom
+    - sprite: *id-rsi
+      state: stripe_top
+      color: "#999999"
+    - sprite: *id-rsi
+      state: stripe_bottom
+      color: "#6b6b6b"
+    - sprite: *ronstation-icon-rsi
+      offset: *icon-offset
+      state: CCDivIntel
+  - type: Item
+    sprite: Objects/Misc/id_cards.rsi
+    heldPrefix: gold
+  - type: IdCard
+    CanMicrowave: false
+    jobIcon: JobIconCCDivIntel
+  - type: NanoChatCard # CD
+    listNumber: false
+  - type: Unremoveable # Prevents it from being removed from the computer; it is never meant to leave it.
+
+- type: entity
+  parent: [ StationAiIDCard, BaseCommandContraband ]
+  id: AIIDcardUnremovable
+  name: Station AI ID
+  description: An ID card for a Station AI core; No access, just allows the usage of Nanochat.
+  components:
+  - type: Sprite
+    sprite: Objects/Misc/id_cards.rsi
+    layers:
+    - state: silver
+    - state: stripe_top
+      color: "#a53aaa"
+    - state: stripe_bottom
+      color: "#652368"
+    - sprite: Interface/Misc/job_icons.rsi
+      offset: *icon-offset
+      state: StationAi
+  - type: Item
+    sprite: Objects/Misc/id_cards.rsi
+    heldPrefix: silver
+  - type: IdCard
+    CanMicrowave: false
+    jobIcon: JobIconStationAi
+  - type: NanoChatCard # CD
+    listNumber: true
+  - type: Unremoveable

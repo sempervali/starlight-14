@@ -1,0 +1,38 @@
+- type: entity
+  parent: ComputerPersonalDesktop
+  id: ComputerPersonalDesktopAI
+  name: AI desktop computer
+  description: A stationary desktop computer with a hard-coded ID; lets the AI utilize Nanochat.
+  suffix: Optional to map, Station AI
+  components:
+  - type: Pda
+    id: AIIDcardUnremovable
+  - type: AccessReader
+    access: [[ "StationAi" ]]
+  - type: CartridgeLoader
+    uiKey: enum.PdaUiKey.Key
+    preinstalled:
+      - CrewManifestCartridge
+      - NotekeeperCartridge
+      - NanoTaskCartridge
+      - NewsReaderCartridge
+      - NanoChatCartridge # CD
+- type: entity
+  parent: ComputerPersonalDesktop
+  id: ComputerPersonalDesktopCCAI
+  name: centcomm AI desktop computer
+  description: A stationary desktop computer with a hard-coded ID; lets the AI utilize Nanochat.
+  suffix: Admeme, DO NOT MAP
+  components:
+  - type: Pda
+    id: CCAIIDcardUnremovable
+  - type: AccessReader
+    access: [[ "CentralCommand" ]]
+  - type: CartridgeLoader
+    uiKey: enum.PdaUiKey.Key
+    preinstalled:
+      - CrewManifestCartridge
+      - NotekeeperCartridge
+      - NanoTaskCartridge
+      - NewsReaderCartridge
+      - NanoChatCartridge # CD
