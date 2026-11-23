@@ -1,0 +1,30 @@
+- type: entity
+  id: LockerCentCommIntern
+  parent: LockerCentComm
+  name: centcomm intern locker
+  description: A locker with a ready-to-go outfit and tools to get your (First?) day on the job going. Try not to fall asleep while on the clock.
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      entity_storage: !type:AllSelector
+        children:
+        - id: CentComInternPDA
+        - id: ClothingEyesGlassesCentComm
+        - id: ClothingEyesHudCentComm
+        - id: ClothingHeadHatCentcom
+        - id: ClothingBackpackHoldingCC
+        - id: ClothingHeadsetAltCentCom
+        - id: BoxFolderCentComClipboardThreePapers
+        - id: BoxFolderCentComThreePapers
+        - id: BoxStampsCCAdministrative
+        - id: RubberStampCentcom
+        - id: FlashlightSeclite
+        - id: WeaponDisabler
+        - id: GreenPhone
+        - id: BoxSurvivalNonBreatherExtended
+        - id: DoubleEmergencyOxygenTankFilled
+        - id: DoubleEmergencyNitrogenTankFilled
+        - id: BoxFolderCentComClipboardThreePapers
+        - id: ClothingUniformJumpsuitCentcomOfficial
+        - id: ClothingUniformJumpskirtPencilCentcomOfficial
+        - id: ClothingShoesBootsCombat # Yes, intentionally the unfilled variation. You get a disabler. Thats it. If you need anything more, you're probably already with a full CC Official (or Greenshield).

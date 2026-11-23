@@ -22,3 +22,4 @@ job-name-ccdivintelmember = CentComm Intelligence Division Official
 
 #CC Misc.
 job-name-cck9 = CentComm K9 Unit
+job-name-ccintern = CentComm Intern

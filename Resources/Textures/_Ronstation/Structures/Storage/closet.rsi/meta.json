@@ -1,0 +1,51 @@
+{
+    "version": 1,
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "copyright": "State based copyright",
+    "license": "CC-BY-SA-3.0",
+    "states": [
+        {
+            "name": "generic",
+            "copyright": "Taken from tgstation"
+        },
+        {
+            "name": "generic_door",
+            "copyright": "Taken from tgstation"
+        },
+        {
+            "name": "ccgreen",
+            "copyright": "Taken from tgstation, originally resprited into NTR by wonderfulnewworld (GitHub), recolored by Semper for CC"
+        },
+        {
+            "name": "cc_door",
+            "copyright": "Taken from tgstation, originally resprited into NTR by wonderfulnewworld (GitHub), recolored by Semper for CC"
+        },
+        {
+            "name": "cc_open",
+            "copyright": "Taken from tgstation, resprited into NanoTrasen Black by wonderfulnewworld (GitHub), recolored by Semper for CC"
+        },
+        {
+            "name": "welded",
+            "copyright": "Taken from tgstation"
+        },
+        {
+            "name": "unlocked",
+            "copyright": "Taken from tgstation"
+        },
+        {
+            "name": "locked",
+            "copyright": "Taken from tgstation"
+        },
+        {
+            "name": "sparking",
+            "copyright": "Taken from tgstation"
+        },
+        {
+            "name": "panel_open",
+            "copyright": "Taken from tgstation"
+        }
+    ]
+}

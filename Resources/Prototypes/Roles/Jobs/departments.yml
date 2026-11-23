@@ -57,6 +57,7 @@
   - CentralCommandOperator # Starlight Addition
   - CentralCommandGreenShield # Starlight Addition
   - CentralCommandK9 # Ronstation Addition
+  - CentralCommandIntern # Ronstation Addition
   editorHidden: false # Ronstation change: Trying to make manifest, latejoin/new life, and loadouts menus less confusing.
   weight: 120
 

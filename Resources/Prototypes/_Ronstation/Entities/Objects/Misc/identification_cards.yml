@@ -550,6 +550,33 @@
   - type: NanoChatCard # CD
     listNumber: false
 
+- type: entity
+  parent: [ IDCardStandard, BaseCentcommContraband ]
+  id: CCInternIDCard
+  name: centcomm intern id card
+  description: An ID card for an intern at CentComm. Much more limited than full Officials.
+  components:
+  - type: Sprite
+    sprite: _Starlight/Objects/Misc/id_cards.rsi
+    layers:
+    - state: centcom
+    - sprite: *id-rsi
+      state: stripe_top
+      color: "#999999"
+    - sprite: *id-rsi
+      state: stripe_bottom
+      color: "#6b6b6b"
+    - sprite: *starlight-icon-rsi
+      offset: *icon-offset
+      state: CentComm
+  - type: Item
+    sprite: Objects/Misc/id_cards.rsi
+    heldPrefix: silver
+  - type: PresetIdCard
+    job: CentralCommandIntern
+  - type: NanoChatCard # CD
+    listNumber: false
+
 # AI id cards; no access, just for desktop computers. Its a roundabout method for allowing AIs to use Nanochat, but given what a Station AI is, it makes no sense for them to have no way to use a program...
 
 - type: entity

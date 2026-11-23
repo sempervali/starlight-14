@@ -15,3 +15,11 @@
   components:
   - type: Pda
     id: CCK9IDCard
+
+- type: entity
+  parent: CentcomPDA
+  id: CentComInternPDA
+  suffix: Centcomm, Intern admeme
+  components:
+  - type: Pda
+    id: CCInternIDCard

@@ -1,0 +1,14 @@
+- type: entity
+  id: LockerCentComm
+  name: centcomm locker
+  parent: LockerBaseSecure
+  components:
+  - type: Appearance
+  - type: AccessReader
+    access: [["CentralCommand"]]
+  - type: Sprite
+    sprite: _Ronstation/Structures/Storage/closet.rsi
+  - type: EntityStorageVisuals
+    stateBaseClosed: ccgreen
+    stateDoorOpen: cc_open
+    stateDoorClosed: cc_door

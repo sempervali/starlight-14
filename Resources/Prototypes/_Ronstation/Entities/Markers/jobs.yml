@@ -13,3 +13,18 @@
         - sprite: _Starlight/Mobs/Pets/k9.rsi
           state: k9-brown
         - state: jobicon
+
+- type: entity
+  id: SpawnPointCCintern
+  parent: SpawnPointJobBase
+  name: CentComm Intern
+  suffix: Only Map CC # still a CC specific role.
+  components:
+    - type: SpawnPoint
+      job_id: CentralCommandIntern
+    - type: Sprite
+      sprite: _Starlight/Markers/jobs.rsi
+      layers:
+        - state: green
+        - state: nct
+        - state: jobicon

@@ -1,3 +1,84 @@
+- type: job
+  id: CentralCommandIntern
+  roleType: CentCommAligned
+  name: job-name-ccintern
+  description: job-description-ccintern
+  playTimeTracker: JobCCintern
+  requirements:
+    - !type:DepartmentTimeRequirement
+      department: Command # For obvious reasons, whoever is getting this role SHOULD have some decent amount of time as station command, so bare minimum they understand the higher standards the role requires.
+      time: 25h
+  setPreference: false
+  whitelisted: false # Given this being a deliberately access-limited role, it should be safe to allow others to pick it as a job when added specifically by an admin using the recruitment computer. It does not get round start slots, and should never be given roundstart slots.
+  startingGear: CentcommInternGear
+  icon: "JobIconCentralCommandOfficial"
+  rules: job-rules-corporate-aligned
+  supervisors: job-supervisors-ccdiv
+  access: # Soft AA with *no* major Security access besides Brig/Brigmed, nor any heads of staff. Deliberate, as some locked items use head access to prevent 'interns' from using them to gain dangerous equipment (like weapons) without permission/oversight; its another attempt to make allowing people into CC less stressful, but interns should still get at least light supervision
+  - CentralCommand # yes they still get CC access, since their job requires them to work in CC only areas. Its why the rest of their access is so specifically set, to allow for still locking some things off from them.
+  - Bar
+  - Service
+  - Maintenance
+  - Janitor
+  - Theatre
+  - Kitchen
+  - Chapel
+  - Hydroponics
+  - External
+#  - Cryogenics If an admin CC character (or someone who is whitelisted) cryos at CC, this could allow for privilege escalation. Cutting this off before it can ever become a problem.
+  - Chemistry
+  - Engineering
+  - Research
+  - Detective
+  - Brig
+  - Lawyer
+  - Cargo
+  - Atmospherics
+  - Medical
+  - GenpopEnter
+  - GenpopLeave
+  - Journalism
+  - Robotics
+  - Brigmedic
+  - Surgery
+  - Paramedic
+  - Mining
+  - Mail
+  - Debrief
+  - Shuttle
+  - Clown
+  - Mime
+  special:
+  - !type:AddImplantSpecial
+    implants: [ MindShieldImplant, DeathRattleImplantCentcomm, CommandTrackingImplant ] # technically this only applies if added via recruitment console
+  - !type:AddComponentSpecial # people in this role shouldn't be the target of objectives, since their duties are completely off station
+    components:
+      - type: NoObjectiveTarget
+
+- type: startingGear
+  id: CentcommInternGear
+  equipment:
+    jumpsuit: ClothingAltUniformJumpsuitCentcomOfficial
+    back: ClothingBackpackHoldingCC
+    shoes: ClothingShoesBootsCombatFilled
+    head: ClothingHeadHatCentcom
+    eyes: ClothingEyesGlassesCentComm
+    gloves: ClothingHandsGlovesColorBlack
+    outerClothing: ClothingOuterArmorCentcommCarapace
+    id: CentComInternPDA
+    ears: ClothingHeadsetAltCentCom
+    belt: BoxFolderCentComClipboardThreePapers
+    pocket1: FlashlightSeclite
+    pocket2: WeaponDisabler
+  storage:
+    back:
+    - GreenPhone
+    - ClothingEyesHudCentComm # Shadekin compliant <3
+    #- Centcommteleportdoohickey  # For interns, this should only be manually given to them by an admin since they aren't supposed to be seen on station without said manual admin intervention
+    - DoubleEmergencyNitrogenTankFilled
+    - DoubleEmergencyOxygenTankFilled
+    - BoxSurvivalNonBreatherExtended
+
 - type: startingGear
   id: CentcomFormalGear
   equipment:

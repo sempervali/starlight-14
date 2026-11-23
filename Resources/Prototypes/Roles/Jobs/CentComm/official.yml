@@ -19,6 +19,9 @@
   special:
   - !type:AddImplantSpecial
     implants: [ MindShieldImplant, DeathRattleImplantCentcomm, CommandTrackingImplant ] # Ronstation: Less pain for the BSO.
+  - !type:AddComponentSpecial # RS: CCO shouldn't be an antag target.
+    components:
+      - type: NoObjectiveTarget
 
 - type: startingGear
   id: CentcommGear
